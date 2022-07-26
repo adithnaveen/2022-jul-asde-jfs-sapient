@@ -149,3 +149,20 @@
 
     @enduml
 ```
+
+- Maven 
+    - Your dependency Management is taken care 
+    - they help you to scafold the application 
+    - you can publish the depency 
+
+
+
+1. Configure maven  to path 
+2. mvn archetype:generate  - follow instruction 
+3. mvn clean 
+4. mvn clean compile 
+5. mvn install 
+6. mvn clean install -DskipTests
+7. get the dependencies from maven repo and put it in pom.xml 
+8. mvn dependency:tree
+
