@@ -43,4 +43,8 @@
 
 
 
+# Day 1 
+- Standard
+    - W3C 
+        - REST (Representational State) - JSON
 
