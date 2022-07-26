@@ -48,3 +48,104 @@
     - W3C 
         - REST (Representational State) - JSON
 
+- UML 
+    - Class Diagram 
+        - Attributes 
+        - Behviours 
+    - Package Diagram 
+    - Component Diagram 
+    - Deployment Diagram 
+    - Sequence Diagram 
+    - Activity diagram 
+    - Use Case Diagram 
+    - E-R Diagram 
+```
+    class Employee {
+        fields 
+        Address
+
+        what do they do 
+    }
+
+    class Address {
+        fields 
+
+        what do they do 
+
+    }
+```
+
+
+
+
+
+```
+    - C 
+    struct Emp {
+        fields 
+
+    } - is always public - no acess specifier concept 
+    - top down approact - 
+    int main() {
+
+    }
+
+    - C++ 
+    class Emp  {
+        fields  
+        behaviours 
+    }
+
+    - java 
+
+    class Employee {
+        private int empId; 
+        private Name name; 
+        private double salary; 
+
+        // some BL 
+    }
+
+    class Customer {
+        private int custId; 
+        private Name name; 
+        private double income; 
+    }
+
+    class Name {
+        private String firstName; 
+        private String lastName; 
+        private String middleName; 
+    }
+
+```
+
+- Highly Cohesive - Loosely Coupled Systems 
+
+- Trainer - profile 
+- Trainer has to propose for TOC 
+- Trainer Trainee will work for x number of days on TOC 
+- Trainer there is a cost involved 
+
+
+- Trainer comes to system
+- clicks on login 
+- goes to login screen 
+- enters credentials 
+- loging success 
+
+
+```
+    - sample sequence diagram 
+    @startuml
+    Trainer -> TMS : Clicks On Login 
+    TMS -> Trainer : Gives the login screen 
+
+    Trainer -> Credentials : Enters Valid Credentials
+    Credentials -> UserAuthService: As Json Object 
+    UserAuthService -> Trainer : Sends JWT Token 
+
+    Trainer -> Profile: To update the profile 
+
+    @enduml
+```
