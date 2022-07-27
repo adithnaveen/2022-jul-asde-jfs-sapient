@@ -166,3 +166,218 @@
 7. get the dependencies from maven repo and put it in pom.xml 
 8. mvn dependency:tree
 
+
+
+toc - trainer/sme write/read, company read 
+- standard toc 
+    - section 1 
+        - topic 1 
+        - topic 2 
+        - topic 3 
+    - section 2
+        - topic 1 
+        - topic 2 
+        - topic 3         
+
+
+- sapient
+- standard toc 
+    - section 1 
+        - topic 1 
+        - topic 2 
+    - section 2
+        - topic 1 
+        - topic 2 
+        - topic 3                 
+
+
+
+- Philips
+- standard toc 
+    - section 1 
+        - topic 1 
+        - topic 2 
+        - topic 4 
+        - topic 5 
+    - section 2
+        - topic 1 
+        - topic 2 
+        - topic 3 
+
+
+
+1. understand the requirement 
+2. Create class diagram / seqence diagram 
+3. implementation 
+    1. core logic with only java + db like mongodb 
+    2. core logic with java + db mongodb + view to be react js 
+
+
+Team1 - Alok, Kartik, Kartikey, tejasw,  
+Team2 - Himanshu, Mayank, simar, yash
+Team3 - Mohammad, rohan, siddharth
+Team4 - Prakhar, Pranshu, Praneet
+Team5 - Abhigyan, Nieless, Satya 
+
+
+folder structure 
+1. learning 
+2. assessment 
+3. prodct-phase
+
+
+# Day 2 
+
+- Git - is the way how code is processes 
+- Github/Bitbucket - is the place where it is kept 
+
+```
+- pranshu 
+    package com.pranshu; 
+
+    public class Hello {
+
+        public void hi() {
+            // some budiness logic 
+        }
+
+    }
+
+- karthik 
+
+ package com.karthik; 
+
+    public class Hello {
+ 
+        public void hello() {
+            // some budiness logic  
+        }
+    }
+
+```
+
+- SCM 
+    - VSS
+    - CVS 
+    - SVN 
+    - GitHub / Git 
+- LowCode - NoCode Approach 
+
+> git init my-repo
+
+> create a file 
+
+> git add filename
+
+> git commit -m "first commit" 
+
+> git config 
+    - terminal 
+    - user / global 
+    - system 
+
+> git config --global user.email navsrini4@partners.publicisgroupe.net
+
+> git config --global --edit
+
+```
+    1002  cd Desktop
+ 1003  pwd
+ 1004  mkdir git-works-asde
+ 1005  cd git-works-asde
+ 1006  pwd
+ 1007  git -version
+ 1008  clear
+ 1009  git --version
+ 1010  git init my-repo
+ 1011  ls
+ 1012  cd my-repo
+ 1013  ls -la
+ 1014  ls -a
+ 1015  clear
+ 1016  code . 
+ 1017  git status
+ 1018  git add sample.html
+ 1019  git status
+ 1020  git comit -m "first commit"
+ 1021  git commit -m "first commit"
+ 1022  git status
+ 1023  git status
+ 1024  git add sample.html
+ 1025  git commit -m "added h1 and para tag in body"
+ 1026  git status
+ 1027  git log
+ 1028  clear
+ 1029  git config --edit
+ 1030  git config --global --edit
+ 1031  git config --global --edit
+ 1032  clear
+ 1033  git config --global --edit
+ 1034  clear
+ 1035  git add .
+ 1036  git commit -m "added title"
+ 1037  git st
+ 1038  git log 
+ 1039  git log --oneline
+ 1040  clear
+ 1041  git branch 
+ 1042  git branch table-branch
+ 1043  git branch
+ 1044  git checkout table-branch
+ 1045  git branch 
+ 1046  git st
+ 1047  git add .
+ 1048  git commit -m "create table " 
+ 1049  git status
+ 1050  clear
+ 1051  git add . 
+ 1052  git commit -m "put some content in table"
+ 1053  git status
+ 1054  git log --oneline
+ 1055  git log --oneline --decorate --graph
+ 1056  git checkout main 
+ 1057  git add . 
+ 1058  git commit -m "added h3 in main"
+ 1059  git checkout main 
+ 1060  git log --oneline --decorate --graph
+ 1061  git branch
+ 1062  git checkout table-branch 
+ 1063  git log --oneline --decorate --graph
+ 1064  clear
+ 1065  git branch
+ 1066  git checkout main 
+ 1067  git merge table-branch
+ 1068  git status
+ 1069  git add . 
+ 1070  git commit -m "merged and resolved conflicts"
+ 1071  git status
+ 1072  clear
+ 1073  git branch 
+ 1074  git branch alok-feature
+ 1075  git branch 
+ 1076  git checkout alok-branch
+ 1077  git checkout alok-feature
+ 1078  git status
+ 1079  git add . 
+ 1080  git commit -m "added h3 in alok works"
+ 1081  git add . 
+ 1082  git commit -m "updated title of the page"
+ 1083  git status
+ 1084  git log --oneline --decorate --graph 
+ 1085  git checkout main 
+ 1086  git branch 
+ 1087  git status
+ 1088  git add .
+ 1089  git add .
+ 1090  git commit -m "added h4"
+ 1091  git status
+ 1092  git log --oneline --decorate --graph 
+ 1093  clear
+ 1094  git checkout main 
+ 1095  git branch 
+ 1096  git merge alok-feature
+ 
+```
+
+- mono repo 
+    
