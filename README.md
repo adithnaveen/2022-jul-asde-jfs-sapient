@@ -627,3 +627,11 @@ pipeline {
  > db.embed.remove({})
 
  > db.emps.remove({empname : "simar"})
+
+
+ > db.person.createIndex({gender:1})
+
+ > db.person.createIndex({gender:1, email:1})
+
+
+ > db.person.createIndex({gender:1, email:-1})
