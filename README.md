@@ -635,3 +635,31 @@ pipeline {
 
 
  > db.person.createIndex({gender:1, email:-1})
+
+
+
+ - problem statement 
+
+ 1. Create sequence diagram 
+ 2. Create class diagram 
+ 3. Create logical data model 
+    - TOC 
+    - Trainer 
+    - Company 
+    - Company Staff 
+    - .... 
+4. import .json file to the db 
+5. perform simple CRUD operations to validate the code 
+
+ {
+    tid:101, 
+    name:"naveen kumar" 
+ }
+
+ {
+    tid:101, 
+    name: {
+        "first":"Naveen", 
+        "last":"Kumar
+    }
+ }
