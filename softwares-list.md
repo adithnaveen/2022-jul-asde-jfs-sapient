@@ -1,5 +1,6 @@
 # List Of Softwares For Training 
 
+## Java 11 
 
 ## Git Bash - https://git-scm.com/downloads
 
@@ -7,6 +8,7 @@
 
 ## MongoDB Windows - https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-4.4.15-signed.msi
 
+## Mondobd studio -  https://robomongo.org/ 
 
 
 

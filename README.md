@@ -460,3 +460,170 @@ pipeline {
 - need 1 simple project in bitbucket in the folder and build it with jenkins 
 - bitbucket plugin 
 
+
+
+# Day 3 
+
+- CAP theorem
+    - Horizontal Scalaing 
+
+- Introduction to Data modelling 
+- MongoDB - NoSQL DB, CRUD, Understnaing & Creating  Indexes, 
+
+- ACID 
+   - Vertical Scaling 
+
+
+```
+   [ {
+        empId: 101, 
+        empName:"Siddharth", 
+        empSal:1234, 
+        addresss:{
+             hno:1222, 
+            street:"Dream Way Blvd", 
+            city:"bengaluru", 
+            State:"KA" 
+        }
+        email:"siddharth@ps.com", 
+        access: {
+            sharepoint:"siddhart"
+        }
+    }, 
+    {
+        empId: 102, 
+        empName:"Mayank", 
+        empSal:1244, 
+        addresss:{
+             hno:4422, 
+            street:"Reston Blvd", 
+            city:"Reston", 
+            State:"VA" 
+        }
+        email:"mayank@ps.com", 
+        access: {
+            teams:"mayank@ps.com", 
+            bitbucket:"mayaneg", 
+            jira:"mayaneg", 
+            sharepoint:"mayaneg"
+        }
+    }, 
+    
+    ]
+```
+
+- in memory db 
+    - redis 
+    - cauch db 
+    - memcahce db 
+
+
+
+> db.emps.insert({empid:101, empname:"harry", empsal:1234});
+
+> db.emps.insert({empid:102, empname:"Siddharth", empsal:2233});
+
+> db.emps.insert({empid:103, empname:"Satya", empsal:3322});
+
+> db.emps.insert({empid:104, empname:"Himanshu", empsal:4321});
+
+> db.emps.insert({empid:105, empname:"Praneeth", empsal:4455, city:"bengaluru"});
+
+> db.emps.find({selection + and + or + or some functions available in  mongodb}, {projection})
+
+- find emp who is in bengaluru, and project only name and empid 
+
+> db.emps.find({city:"bengaluru"}, {empid:1, empname:1, _id:0})
+
+>  db.emps.find({city:{$exists:true}})
+
+>  db.emps.find({city:{$exists:false}})
+
+> db.emps.find({empname: {$in:["harry", "Satya"]}})
+
+> db.emps.find({empsal:{$gt:2000}})
+
+-- and 
+> db.emps.find({
+        empsal:{$gt:2000}, 
+        city:"bengaluru"
+        })
+
+-- or 
+
+> db.emps.find({
+    $or:[
+        { empsal:{$gt:3000}},
+        {empname:"harry"}
+    ]
+})
+
+-- and / or 
+> db.emps.find({
+    city:"bengaluru", 
+    $or:[
+        { empsal:{$gt:3000}},
+        {empname:"harry"}
+    ]
+})
+
+
+
+- emp - 50000
+- dept - 40 
+- project  - 56 
+- insurance - 44000
+- bank details - 50000
+- salary-for-consulting  - 23000
+... 
+
+- embedded document 
+
+> db.embed.insert({
+    empid:1234, 
+    name: {
+        first:"Abhigyan", 
+        last:"Utsav"
+    }, 
+    address: {
+        no:4433, 
+        street:"American Dream Way", 
+        city:"Cupertino", 
+        state:"CA"
+    }
+})
+
+> db.embed.insert({
+    empid:1122, 
+    name: {
+        first:"Tejasw", 
+        last:"Jain"
+    }, 
+    address: {
+        no:56, 
+        street:"Stevenks Creek Blvd", 
+        city:"AshBurn", 
+        state:"VA"
+    }
+})
+
+ > db.embed.find({"name.last":"Jain"});
+
+ -- update 
+
+> db.emps.update({}, {$set:{city:"Delhi"}}) - single record 
+
+> db.emps.update({}, {$set:{city:"Delhi"}}, {multi:true}) - multiple records 
+
+> db.emps.update({empname:"Satya"}, {$set:{city:"Hyderabad", email:"satya@ps.com", empsal:5544}}, {multi:true}) - multiple records 
+
+- upsert 
+
+> db.emps.update({empname:"simar"}, {$set:{city:"Mysuru", empsal:4433}}, {upsert:true})
+
+ > db.emps.update({city:{$set:"Delhi"}}, {city:{$exists:false}})
+
+ - delete - remove 
+ > db.embed.remove({})
+
+ > db.emps.remove({empname : "simar"})
