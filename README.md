@@ -874,3 +874,12 @@ class Client {
 
 ```
 
+
+
+1. class extending thread class 
+2. class implementing runnable interface 
+3. executors 
+
+
+
+
