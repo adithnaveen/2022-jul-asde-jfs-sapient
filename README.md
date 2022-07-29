@@ -771,10 +771,18 @@ Team5 - Abhigyan, Nieless, Satya - Alok
 - user stories 
 - Given - pre condition, When - actual, Then- post , But - check, And - multiple 
 ```
-    Given application is loaded 
-    And the user enters valid credentials 
-    When user clicks on submit <Enter>
-    Then take the user to home page 
+
+    Epic: Creating a CLI application for TMS progressively, to persist the data in secondary storage / dbms 
+
+    User Story: to register a trainer 
+    
+    Steps: 
+    Given application is available  
+    When user gets an option of the menu 
+    And choosed option 1 from the given option to register 
+    Then user is asked for details like email, name, gender etc 
+    When user completes the enteries 
+    Then as an ack the trainer records is shown with trainer id which can be kept for reference 
 
 
 - to create toc 
