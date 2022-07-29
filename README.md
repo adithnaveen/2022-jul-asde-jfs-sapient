@@ -832,7 +832,7 @@ Java (Features)
 
     > javac HelloWorld.java  (Compiler - JIT)
         -> HelloWold.class 
-    > java HelloWorld (Interpreter)
+    > java HelloWorld first-param second-param
 
 
 
