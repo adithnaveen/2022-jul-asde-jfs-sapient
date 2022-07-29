@@ -642,7 +642,7 @@ pipeline {
 
  1. Create sequence diagram 
  2. Create class diagram 
- 3. Create logical data model 
+ 3. Create logical data model (json)
     - TOC 
     - Trainer 
     - Company 
@@ -663,3 +663,214 @@ pipeline {
         "last":"Kumar
     }
  }
+
+
+ ```
+    public class HelloWorld {
+        public static void main(String args[]) {
+            System.out.println("hi"); 
+        }
+    }
+ ```
+
+team-1
+team-2
+team-3
+team-4
+team-5
+
+
+```
+    // bean classes 
+    class User {
+        private int userId; 
+        private String userName; 
+        private String email; 
+        ....
+        
+        public void setUserId(int userId) {
+                // if you want you can write some conditions 
+            this.userId = userId} 
+        public int getUserId() {return this.userId;}
+    }
+
+    class UserService {
+ 
+        public boolean registerUser(User user) {
+            // validate user object 
+            // call dao 
+        }
+
+        public List<User> getAllUsers() {
+            call dao layer 
+            return the user before returning validate the users 
+            got from the db are correct     
+        }
+
+        public User getUser(int userId) {
+            validate if its a +ve number 
+            the call dao layer 
+            return user to controller 
+        }
+
+    }
+
+
+
+
+    class UserDAO {
+        public boolean registerUser(User user) {
+          insert to DB 
+        }
+
+        public List<User> getAllUsers() {
+           get records 
+        }
+
+        public User getUser(int userId) {
+          get single record 
+        }
+
+    }
+ 
+
+```
+
+
+
+# Day 4 
+
+Team1 - Alok, Kartik, Kartikey, tejasw - Himanshu 
+    - completed sequence diagram, working on class diagram, mostly today 
+    - 
+Team2 - Himanshu, Mayank, simar, yash - Asif 
+    - completed sequence diagram, working on class diagram half way, research on data model. 
+
+Team3 - Asif, rohan, siddharth - Pranshu 
+    - seq, class is done,  working on data model
+
+Team4 - Prakhar, Pranshu, Praneet - Abhigyan
+     - seq, class is in progress,  working on data model
+
+Team5 - Abhigyan, Nieless, Satya - Alok 
+    -  completed sequence diagram, working on class diagram, not started with data model 
+
+ - problem statement 
+
+ 1. Create sequence diagram 
+ 2. Create class diagram 
+ 3. Create logical data model (json)
+    - TOC 
+    - Trainer 
+    - Company 
+    - Company Staff 
+    - .... 
+4. import .json file to the db 
+5. perform simple CRUD operations to validate the code 
+
+- user stories 
+- Given - pre condition, When - actual, Then- post , But - check, And - multiple 
+```
+    Given application is loaded 
+    And the user enters valid credentials 
+    When user clicks on submit <Enter>
+    Then take the user to home page 
+
+
+- to create toc 
+    Given the application is loaded 
+    And the user enters userid 
+    And the valid password 
+    Then take the user to menu options 
+    When user selects "1" to Add TOC 
+    Then ask user to enter duration 
+    And outcome 
+    And pre-requistie 
+    And section, topics 
+    When user enters "0" 
+    Then stop the loop 
+    And show an ack to user "TOC Created Successfully" 
+```
+
+
+Java (Features)
+    - Platform Independent 
+    - Architecture Neutral 
+    - Common Code OS 
+    - WORM - Write Once Read Many 
+    - JVM 
+    - .. 
+
+- James Gostling 
+- Oak - 1991 
+- Java - 1993 - Green Project 
+- OOPS 
+
+- public 
+- private 
+- protecte 
+- defulat (package)
+
+```
+    void main() {
+        int x; 
+        printf("%d", x); 
+    }
+
+    scanf("%d", &n); 
+    cin >> n ; 
+```
+
+
+
+```
+    public class HelloWorld {
+        public static void main(String [] args) {
+            System.out.println("hi"); 
+        }
+    }
+
+    > javac HelloWorld.java  (Compiler - JIT)
+        -> HelloWold.class 
+    > java HelloWorld (Interpreter)
+
+
+
+-- initialization 
+    public clas Hello extends Thread  {
+        int x; 
+        static int sx; 
+
+        public void hi() {
+            int hix; 
+        }
+    static {
+        // put your code 
+    }
+    {
+        // put your code
+    }
+        public static  void his() {
+            static int hix; 
+        }
+
+        public void run() {
+            // busines logic goes here 
+            // this may call another method based on condition 
+        }
+    }
+
+class Client {
+    psvm() {
+        Thread t1 = new Thread(new Hello()); 
+        t1.start(); 
+        Thread t2 = new Thread(new Hello()); 
+        t2.start(); 
+        
+        Thread t3 = new Thread(new Hello()); 
+        t3.start(); 
+    }
+}
+
+```
+
