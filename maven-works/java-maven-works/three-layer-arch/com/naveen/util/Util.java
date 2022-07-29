@@ -25,4 +25,8 @@ public class Util {
 	public static Trainer createTrainerBean(String name, String email, String password) {
 		return new Trainer(name, email, password);
 	}
+	
+	public static void showTrainer(Trainer trainer) {
+		System.out.println(trainer);
+	}
 }

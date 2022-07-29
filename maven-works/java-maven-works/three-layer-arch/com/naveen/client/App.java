@@ -14,11 +14,10 @@ public class App {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		TrainerController controller = new TrainerController();
 
-	
 		while (true) {
-			System.out.println("Enter your choice 1. Register 2. Exit");
-			int choice = Integer.parseInt(br.readLine()); 
-			
+			System.out.println("Enter your choice 1. Register 2. Get Trainer 3.  Exit");
+			int choice = Integer.parseInt(br.readLine());
+
 			switch (choice) {
 			case 1:
 				System.out.println("Enter Name: ");
@@ -32,16 +31,21 @@ public class App {
 
 				Trainer trainer = controller.saveTrainer(Util.createTrainerBean(name, email, password));
 
-				System.out.println(trainer);
+				Util.showTrainer(trainer);
 
 				break;
 
-			case 2 : 
-					System.out.println("Fill the code accept trainer id and show the trainer");
-				
-			case 3: 
-					System.out.println("Thank you ...");
-					System.exit(0); 
+			case 2:
+
+				System.out.println("Enter Trainer Id");
+				int trainerId = Integer.parseInt(br.readLine());
+
+				Util.showTrainer(controller.getTrainer(trainerId));
+
+				break;
+			case 3:
+				System.out.println("Thank you ...");
+				System.exit(0);
 			default:
 				System.out.println("Wrong choice try again... ");
 				break;

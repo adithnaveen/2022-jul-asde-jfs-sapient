@@ -15,4 +15,7 @@ public class TrainerController {
 		return service.saveTrainer(trainer);
 	}
 	
+	public Trainer getTrainer (int trainerId) {
+		return service.getTrainer(trainerId); 
+	}
 }

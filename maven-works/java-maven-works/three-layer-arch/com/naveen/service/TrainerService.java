@@ -24,4 +24,9 @@ public class TrainerService implements ITrainerService {
 		// call dao + return 
 		return dao.insertTrainer(trainer);
 	}
+
+	@Override
+	public Trainer getTrainer(int trainerId) {
+		return dao.getTrainer(trainerId);
+	}
 }
