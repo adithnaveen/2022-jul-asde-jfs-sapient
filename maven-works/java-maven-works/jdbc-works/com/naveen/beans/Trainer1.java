@@ -16,5 +16,4 @@ public class Trainer1 {
 	private String trainerName; 
 	private String trainerEmail; 
 	private double trainerIncome;
-	
 }
