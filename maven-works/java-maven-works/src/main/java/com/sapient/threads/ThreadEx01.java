@@ -19,7 +19,8 @@ class MyBusinesslogic extends Thread {
 public class ThreadEx01 {
 	public static void main(String[] args) {
 		System.out.println(Thread.currentThread().getName());
-		
+	
+
 		MyBusinesslogic mbl1= new MyBusinesslogic(); 
 		mbl1.start(); // ths will create os level thread and invoke run method 
 		

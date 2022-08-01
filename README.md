@@ -891,3 +891,59 @@ class Client {
 
 
 
+
+
+
+learning
+assessment - mono repo 
+
+
+
+# Day5 - 
+    - RDBMS, JDBC
+    - RDBMS Concepts, JDBC - CRUD Operations, with postgres DB/Mysql	
+
+
+-  application server 
+    - glass fish - sun microsystems - Oracle corp 
+    - web logic - Oracl corp 
+    - web sphere - IBM 
+    - jboss - Red Hat 
+
+
+- data processing from jdbc to dbms 
+    - Statement - is used only to send sql 
+    - PreparedStatement - statement works + batch statements + they are precompiled 
+    - CallablcStatement - preparedstatement does + can invoke functions and procedures in dbms 
+
+
+- mysql commands 
+
+> create database sapient_aug_2022; 
+
+> use sapient_aug_2022; 
+
+> create table trainer(
+    tid int primary key, 
+    tname varchar(20) not null, 
+    temail varchar(35), 
+    tincome decimal(7,2)
+);
+
+
+```
+    interface Vehicle {
+        .. few mehtods 
+    }
+    class Car impllements Vehicle {
+        private int cI; 
+        private String name; 
+    }
+    class Bike implements Vehicle{
+        private int bikeId; 
+        private String name; 
+    }
+
+    Vehicle v = new Car(); 
+    v= new Bike(); 
+```
