@@ -102,10 +102,11 @@ public class Trainer1Dao implements ITrainer {
 		String sql ="select  tid, tname, temail, tincome  from trainer"; 
 		List<Trainer1> list = new ArrayList<Trainer1>(); 
 		
-		
+		PreparedStatement ps  = null;
+		ResultSet resultSet = null;
 		try {
-			PreparedStatement ps = DBConnection.getMysqlConnection().prepareStatement(sql); 
-			ResultSet resultSet = ps.executeQuery();
+			ps = DBConnection.getMysqlConnection().prepareStatement(sql); 
+			 resultSet = ps.executeQuery();
 			
 			while(resultSet.next()) {
 				Trainer1 t = new Trainer1(); 
@@ -117,8 +118,14 @@ public class Trainer1Dao implements ITrainer {
 				list.add(t); 
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally {
+			try {
+				ps.close(); 
+				resultSet.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 		}
 		return list; 
 	}
