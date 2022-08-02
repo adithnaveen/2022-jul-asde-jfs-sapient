@@ -963,3 +963,68 @@ assessment - mono repo
     - we need to create sub task 
 - assessment 
 - branching strategy 
+
+
+- Java 8 
+
+- Java 
+```
+    main() {
+        hi();
+    }
+    hi() {
+        hello();
+    }
+    hello() {
+        cya()
+    }
+    cya(){.. some bl }
+```
+
+- method they did not have fuction 
+
+```
+- closures 
+    let cya = function(() => {
+        ... some business logic 
+    }){}
+    let hi = function(cya){}
+    function hello(hi); 
+
+    int *myfunction() {}
+
+```
+- Groovy 
+- Ruby 
+- Kotlin 
+- R .... 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- functional interface  - this is an interface which exactly has 1 method 
+
+```
+    interface myinterface {
+        hi();
+    }
+```
