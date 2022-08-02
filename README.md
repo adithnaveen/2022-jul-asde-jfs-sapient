@@ -947,3 +947,19 @@ assessment - mono repo
     Vehicle v = new Car(); 
     v= new Bike(); 
 ```
+
+
+- learning - mono repo 
+- assessment - mono repo 
+- teams - 2-4 - 
+    pax 1 write the the code we need PR 
+
+
+
+# Day 6 
+
+
+- Jira Stories - swati 
+    - we need to create sub task 
+- assessment 
+- branching strategy 

@@ -13,6 +13,11 @@ import com.naveen.dao.Trainer1Dao;
 import com.naveen.exception.IncomeTooLessException;
 import com.naveen.exception.NameTooSmallException;
 
+/**
+ * 
+ * @author naveenkumar
+ *
+ */
 public class TrainerTest {
 	private ITrainer trainerDao = null;
 	

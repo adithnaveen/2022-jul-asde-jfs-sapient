@@ -13,3 +13,9 @@
 # Plant UML Theme 
 > https://plantuml.com/theme
 
+# branching strategy 
+> https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FBg8tiOLZw4A%2Fmaxresdefault.jpg&imgrefurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DBg8tiOLZw4A&tbnid=4OFFRa2yDQAEFM&vet=12ahUKEwiRp8Pdm6f5AhXUyaACHS4cCcsQMygCegUIARDcAQ..i&docid=4V33lKf3WwLrPM&w=1280&h=720&q=branching%20strategy&ved=2ahUKEwiRp8Pdm6f5AhXUyaACHS4cCcsQMygCegUIARDcAQ
+
+
+> https://nvie.com/posts/a-successful-git-branching-model/
+

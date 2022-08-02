@@ -9,6 +9,12 @@ import java.util.Properties;
 
 public class DBConnection {
 
+	/**
+	 * 
+	 * @return Connection 
+	 * @author naveen kumar 
+	 * @see to return connection object for mysql
+	 */
 	public static Connection getMysqlConnection() {
 		// load the driver 
 		try {
