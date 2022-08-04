@@ -61,3 +61,16 @@ public class PredicateEx01 {
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

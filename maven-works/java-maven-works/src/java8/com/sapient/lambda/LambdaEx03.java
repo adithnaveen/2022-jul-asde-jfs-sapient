@@ -41,6 +41,8 @@ public class LambdaEx03 {
 		// working with trainee id 
 		System.out.println("Ascending order of trainee ---- ");
 		Comparator<Trainee> ascOnTid = (t1, t2) -> t1.getTId() - t2.getTId(); 
+		  
+		
 		list.sort(ascOnTid);
 		list.forEach(t -> System.out.println(t));
 	

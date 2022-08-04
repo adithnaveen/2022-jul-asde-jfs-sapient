@@ -1028,3 +1028,88 @@ assessment - mono repo
         hi();
     }
 ```
+
+
+- given numbers 
+    - 87,65,89,-78,77,-101,-922,12
+
+
+```
+    interface one {
+        myfunction1(); 
+        default void myfunctiondefault() {}
+    }
+    interface two {
+         default void myfunctiondefault() {}
+    }
+
+    class Hello implements one, two {
+        hi() {
+            one.myfunctiondefault() ; 
+            two.myfunctiondefault() ; 
+        }
+    }
+```
+
+
+# Day 7 
+- Streams - data is flown 
+
+
+
+```
+    select * from table-name where salary > 3000; 
+
+
+    select dept-name, count(*) 
+        from dept d, emp e 
+        where salary > 3000 
+        group by dept-name
+        order by dept-name;
+```
+
+
+| empid | empname | emp-dept | 
+| 101 | Siddhart | cs| 
+| 102 | Mayank | Mech | 
+| 103 | Nieless | cs| 
+| 104 | Alok | Mech | 
+| 105 | Pranshu | Mech | 
+
+
+cs - 2 
+Mech - 3
+
+mobile, mouse, keyboard, monitor, mobile, keyboard 
+
+2 - MOBILE 
+2 - KEYBOARD
+1 - MONITOR
+1 - MOUSE 
+
+
+
+```
+@FunctionalInterface
+interface TriFunction<T, U, V, R> {
+	R apply(T t, U u, V v);
+}
+
+TriFunction<Person, Salary, Project, Emp>
+
+```
+
+
+
+# Day 8 
+    - MDD - Model Driven Development - entire product mostly should be shown 
+    - DDD - Domain Driven Development 
+    - BDD - Behaviour Driven Development 
+    - TDD - Test Driven Development 
+        - Gatling 
+        - unit testing 
+            - jUnit - 4, 5 (Jupiter)
+            - testNG 
+
+
+
