@@ -10,7 +10,6 @@ public class Trainer {
 	 
 
 	public Trainer() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public Trainer(String trainerName, String trainerEmail, String password) {

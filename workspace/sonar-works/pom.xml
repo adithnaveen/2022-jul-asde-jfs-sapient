@@ -1,15 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<groupId>com.sapient</groupId>
-	<artifactId>java-maven-works</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<artifactId>sonar-works</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 
-	<name>java-maven-works</name>
-	<!-- FIXME change it to the project's website -->
-	<url>http://www.example.com</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -85,14 +79,19 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 
+
 			<properties>
 				<sonar.host.url>http://localhost:9000</sonar.host.url>
 				<sonar.projectKey>sapient-jul-2022-java-works</sonar.projectKey>
 				<sonar.login>4b2c646f3474d19c95e6a14cd358f8eb855e13f0</sonar.login>
 				<sonar.projectName>sapient-jul-2022-java-works</sonar.projectName>
 				<sonar.tests>src/test/java</sonar.tests>
-				<sonar.sources>src/main/java,three-layer-arch,jdbc-works,src/java8</sonar.sources>
+				<sonar.test.inclusions>src/test/java/com/sapient/junit5/test/cases/*</sonar.test.inclusions>
+				<sonar.sources>src/main/java</sonar.sources>
 				<sonar.projectVersion>1.0</sonar.projectVersion>
+				<sonar.jacoco.reportPath>target/jacoco.exec</sonar.jacoco.reportPath>
+				<sonar.java.binaries>target</sonar.java.binaries>
+				<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
 			</properties>
 		</profile>
 	</profiles>
@@ -141,8 +140,8 @@
 					<artifactId>maven-project-info-reports-plugin</artifactId>
 					<version>3.0.0</version>
 				</plugin>
-				
 				<!-- sonar plugins -->
+
 				<plugin>
 					<groupId>org.jacoco</groupId>
 					<artifactId>jacoco-maven-plugin</artifactId>

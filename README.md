@@ -1183,10 +1183,13 @@ mvn sonar:sonar \
   -Dsonar.host.url=http://localhost:9000 \
   -Dsonar.login=4b2c646f3474d19c95e6a14cd358f8eb855e13f0
   
+
+  mvn sonar:sonar -Dsonar.tests=src/test/java
   
   ```
 
   - sonar properties - https://docs.sonarqube.org/latest/analysis/analysis-parameters/
+- the code coverag is 0% 
 
 
-  
+

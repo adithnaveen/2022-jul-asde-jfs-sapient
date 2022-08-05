@@ -7,13 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.naveen.beans.Trainer1;
-import com.naveen.contract.ITrainer;
+import com.naveen.contract.ITrainerContract;
 import com.naveen.exception.IncomeTooLessException;
 import com.naveen.exception.NameTooSmallException;
 import com.naveen.util.DBConnection;
-import com.naveen.util.Util;
 
-public class Trainer1Dao implements ITrainer {
+public class Trainer1Dao implements ITrainerContract {
 
 	@Override
 	public Trainer1 insertTrainer(Trainer1 trainer) 
