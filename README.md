@@ -1168,6 +1168,11 @@ Team5 - Abhigyan, Nieless, Satya - Alok
 
 
 1. Creating the Unit Test Cases + Mocking 
+user Story : creating test cases 
+    as a developer i want to create test cases 
+    i want the source code is covered with test cases 
+    so that we can find the bugs at early stage 
+
 2. Deploy the application with Jenkins 
 3. If you have missed any user strories from sprint1, include it in sprint 2 
 
@@ -1185,11 +1190,121 @@ mvn sonar:sonar \
   
 
   mvn sonar:sonar -Dsonar.tests=src/test/java
-  
-  ```
+```
+
+> mvn clean compile org.jacoco:jacoco-maven-plugin:prepare-agent install site 
+> mvn sonar:sonar 
+
+
 
   - sonar properties - https://docs.sonarqube.org/latest/analysis/analysis-parameters/
 - the code coverag is 0% 
 
 
+
+- Design Pattern - postulate 
+
+```
+    class Company {
+        private Company() {}
+
+        public static Company getCompany(Company comp) {
+            if(comp != null) {
+                return comp; 
+            }
+            return new company; 
+        }
+    }
+    class Employee {
+        private Company comp; 
+        private int empId; 
+        public Employee(Company comp, int empId) {
+            this.empId = empId; 
+            this.comp = comp; 
+        }
+
+    }   
+
+    class Client {
+
+        main() {
+            Company comp = Company.GetCompany(null); 
+            Employee emp = new Employee(comp, 101); 
+            Employee emp = new Employee(comp, 101); 
+            Employee emp = new Employee(comp, 101); 
+            Employee emp = new Employee(comp, 101); 
+        }
+    }
+
+
+    -- factory 
+
+    class Audi extends Car {}
+    class Maruti extends Car {}
+    class Volvo extends Car {}
+    // 1000 
+
+
+
+
+    class Car {
+        public static Car getCar(String name) {
+            if(name.equlas("audi")) {
+                return new Audi(); 
+            }else if(name.equlas("maruti")) {
+                return new Maruti(); 
+            }else if(name.equals("volvo")) {
+                return new Volvo();
+            }
+
+            return null; 
+        }
+    }
+
+    -- client 
+
+    main() {
+        Car car = Car.getCar("maruti"); 
+         car = Car.getCar("audi"); 
+    }
+
+
+-- prototype 
+
+Emp e = new Emp(); 
+e.set
+e.set
+e.set... 
+
+Emp e1 = e.clone();
+
+- builder 
+    select name, salary, gender, depname from 
+        employee e, dept d 
+        where e.deptid = d.deptid
+        .... 
+
+
+interface One {
+    hi();
+    bye();
+    cya();
+    again();
+}
+
+
+abstract class OneAdapter {
+   hi() {}
+    bye(){}
+    cya(){}
+    again(){}
+}
+class Impl extneds OneAdapter{
+     bye(){}
+}
+
+```
+
+
+- SOLID -theory 
 
