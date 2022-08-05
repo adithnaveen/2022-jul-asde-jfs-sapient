@@ -9,12 +9,11 @@ public class TestingSampleCode implements ITestingSampleCode {
 	}
 	
 	@Override
-	public List<String> getNames () {
+	public List<String> getNames ()  {
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			 Thread.currentThread().interrupt();
 		}
 		return List.of("Alok", "Nielless", "Rohan"); 
 	}
@@ -22,7 +21,7 @@ public class TestingSampleCode implements ITestingSampleCode {
 	@Override
 	public boolean checkName(String name) {
 		if(name.length() < 4) {
-			throw new RuntimeException("Name Too Small"); 
+			throw new CustomRuntimeException("Name Too Small"); 
 		}
 		
 		return true; 

@@ -77,6 +77,27 @@
 
 	</dependencies>
 
+
+<profiles>
+		<profile>
+			<id>sonar</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+ 
+			<properties>
+				<sonar.host.url>http://localhost:9000</sonar.host.url>
+				<sonar.projectKey></sonar.projectKey>
+				<sonar.login></sonar.login>
+				<sonar.projectName></sonar.projectName>
+				<sonar.projectVersion>1.0</sonar.projectVersion>
+			</properties>
+		</profile>
+	</profiles>
+	
+	
+	
+	
 	<build>
 		<pluginManagement>
 			<!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -120,6 +141,39 @@
 					<artifactId>maven-project-info-reports-plugin</artifactId>
 					<version>3.0.0</version>
 				</plugin>
+				<!-- sonar plugins --> 
+				
+				<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.2</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.6.0.1398</version>
+			</plugin>
+
 			</plugins>
 		</pluginManagement>
 	</build>

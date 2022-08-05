@@ -15,5 +15,7 @@
 ## SonarQube  - https://www.sonarqube.org/downloads/
 
 
+## sonar lint eclipse plugin - https://marketplace.eclipse.org/content/sonarlint
+
 
 

@@ -1172,3 +1172,21 @@ Team5 - Abhigyan, Nieless, Satya - Alok
 3. If you have missed any user strories from sprint1, include it in sprint 2 
 
 
+
+
+# Day9 
+
+- SonarQube - 9000 
+```
+mvn sonar:sonar \
+  -Dsonar.projectKey=sapient-jul-2022-java-works \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=4b2c646f3474d19c95e6a14cd358f8eb855e13f0
+  
+  
+  ```
+
+  - sonar properties - https://docs.sonarqube.org/latest/analysis/analysis-parameters/
+
+
+  

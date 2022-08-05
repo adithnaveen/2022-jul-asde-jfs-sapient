@@ -11,16 +11,11 @@ import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
-
 
 
 public class HttpClientEx01 {
 	public static void main(String[] args) throws IOException, InterruptedException {
-//		httpGet();
-		
-//		httpPost();
+
 		
 		System.out.println(Files.readString(Path.of("./sample.txt"))); 
 		
@@ -37,9 +32,6 @@ public class HttpClientEx01 {
 		System.out.println(myWord.stripTrailing().length());
 		
 		
-		
-		List<String> list = new ArrayList<String>(); 
-		List<Object> list1 = List.of();
 				
 		
 	}

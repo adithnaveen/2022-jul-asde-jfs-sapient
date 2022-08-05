@@ -97,7 +97,8 @@ class TestingSampleCodeTest {
 						return tsc.getNames().size();
 					});
 					assertEquals(3, namesSize);
-				}, () -> assertEquals(3, tsc.getNames().size()));
+				}, 
+				() -> assertEquals(3, tsc.getNames().size()));
 	}
 
 	@Test
