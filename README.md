@@ -1112,4 +1112,63 @@ TriFunction<Person, Salary, Project, Emp>
             - testNG 
 
 
+ 
+
+Team1 - Alok, Kartik, Kartikey, tejasw - Himanshu 
+    - completed sequence diagram, working on class diagram, mostly today 
+    - dao is done, the code not looking great 
+
+    	private ArrayList<String> toc_requisites;
+```        public void getToc_requisites() {
+
+        }
+
+        ```
+    - identify the missing user stories, need to be added in next sprint 
+    - test cases missing, code quality needs to be checked. 
+    - code should be improvised 
+Team2 - Himanshu, Mayank, simar, yash - Asif 
+    - completed sequence diagram, working on class diagram half way, research on data model. 
+    - PR not done 
+    - the program was broken in between, once after login there should have been an option for logout 
+    - for himanshu git it not working 
+    - lacking with data schema  
+Team3 - Asif, rohan, siddharth - Pranshu 
+    - seq, class is done,  working on data model
+
+Team4 - Prakhar, Pranshu, Praneet - Abhigyan
+     - seq, class is in progress,  working on data model
+
+Team5 - Abhigyan, Nieless, Satya - Alok 
+    -  completed sequence diagram, working on class diagram, not started with data model 
+
+
+
+
+
+
+1. Login - Trainer 
+2. Logout - Trainer 
+3. Login - Company 
+4. Logout - Company 
+5. Exit 
+
+
+1. Login - Trainer 
+    1. Enter username 
+        Your name 
+    2. Password 
+        Options show 
+        1. Create TOC 
+        2. View Your TOC's 
+        3. Update Profile 
+        4. Logout 
+
+    2. Register 
+
+
+1. Creating the Unit Test Cases + Mocking 
+2. Deploy the application with Jenkins 
+3. If you have missed any user strories from sprint1, include it in sprint 2 
+
 
