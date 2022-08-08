@@ -1,5 +1,10 @@
 package com.sapient.junit.works;
 
+/**
+ * 
+ * @author naveenkumar
+ * @see throwing runtime exception from user, for linting
+ */
 public class CustomRuntimeException extends RuntimeException{
 	@Override
 	public String toString() {

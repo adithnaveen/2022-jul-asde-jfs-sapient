@@ -4,10 +4,10 @@ import java.util.List;
 
 public interface ITestingSampleCode {
 
-	String helloName(String name);
+	public String helloName(String name);
 
-	List<String> getNames();
+	public List<String> getNames();
 
-	boolean checkName(String name);
+	public boolean checkName(String name);
 
 }

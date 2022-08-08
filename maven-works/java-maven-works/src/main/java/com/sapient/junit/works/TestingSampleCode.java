@@ -2,7 +2,18 @@ package com.sapient.junit.works;
 
 import java.util.List;
 
+/**
+ * 
+ * @author naveenkumar
+ *
+ */
 public class TestingSampleCode implements ITestingSampleCode {
+	
+	/**
+	 * @see saying hello to the user when passed as argument 
+	 * @return string 
+	 */
+	
 	@Override
 	public String helloName(String name) {
 		return "hello " + name; 

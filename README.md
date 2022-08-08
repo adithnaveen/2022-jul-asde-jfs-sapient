@@ -1308,3 +1308,60 @@ class Impl extneds OneAdapter{
 
 - SOLID -theory 
 
+
+
+# Day 10 
+- to deploy an application with jenkins 
+
+- Design pattern 
+    - singleton
+        - Eager 
+        - Lazy 
+
+
+
+```
+Example:
+
+ @Slf4j
+ public class LogExample {
+ }
+ 
+will generate:
+ public class LogExample {
+     private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(LogExample.class);
+ }
+ 
+```
+
+- 90's 
+    - servlets and JSP 
+    - Struts 1.0 and 2.0 (to use MVC) 
+    - Rod Johnson - Spring + IOC / DI 
+
+```
+application.xml 
+    <beans>
+        <bean id="dummydao" class="com.sapient.dao.DummyDAO"></bean>
+        <bean id="jdbcdao" class="com.sapient.dao.JDBCDAO"></bean>
+    </beans>
+
+
+
+    main() {
+
+        ApplicationContext context = new ClassPathAXmlApplicationContext("application.xml"); 
+        IEmployeeDAO = context.get("dummydao"); 
+
+    }
+
+
+```
+
+
+    - AutoWiring 
+    - Bean Post Processor 
+    - AOP 
+    - Reading the Data from properties 
+    - 
+
