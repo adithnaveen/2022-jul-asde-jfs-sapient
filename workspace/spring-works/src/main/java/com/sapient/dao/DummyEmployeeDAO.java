@@ -7,4 +7,11 @@ public class DummyEmployeeDAO implements IEmployeeDAO{
 		return 0;
 	}
 
+	public void init() {
+		System.out.println("------------ DummyEmployeeDAO.init()----------");
+	}
+	
+	public void destroy() {
+		System.out.println("------------ DummyEmployeeDAO.destroy()----------");
+	}
 }

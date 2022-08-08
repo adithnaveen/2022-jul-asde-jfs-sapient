@@ -1338,6 +1338,7 @@ will generate:
     - servlets and JSP 
     - Struts 1.0 and 2.0 (to use MVC) 
     - Rod Johnson - Spring + IOC / DI 
+        - by default all spring beans are single ton 
 
 ```
 application.xml 
@@ -1365,3 +1366,58 @@ application.xml
     - Reading the Data from properties 
     - 
 
+
+
+0.0.0.0 - 255.255.255.255 
+
+
+```
+public class Screen {
+	@Value(value = "6")
+	private int len; 	
+}
+
+public class Screen {
+
+	private int len; 	
+
+    public void setLen(int len) {
+        this.len = len; 
+    }
+}
+
+some body calling 
+Screen screen = new Screen(); 
+ 
+
+
+```
+
+
+```
+Creating mobile class 
+    public class Mobile {
+        private Camera camera; 
+        private Screen screen; 
+        private Speaker speaker; 
+
+        // getter and setters 	
+}
+
+
+main() {
+    Mobile m = new Mobile(); 
+    Camera camera = new Camera(); 
+    camera.setType("Vga"); 
+
+    m.setCamera(camera); 
+}
+
+``` 
+
+
+[ INFO] 2022-08-08 14:56:26,936 main            com.sapient.client.AnnotationEx02 [  19] 
+Mobile is : Mobile(camera=Camera(type=vga), screen=Screen(len=6, bre=4, screenType=gorilla), speaker=Speaker(type=mono, volLevels=2))
+
+
+SOLID 
