@@ -1420,4 +1420,58 @@ main() {
 Mobile is : Mobile(camera=Camera(type=vga), screen=Screen(len=6, bre=4, screenType=gorilla), speaker=Speaker(type=mono, volLevels=2))
 
 
-SOLID 
+
+# Day 11 
+
+- SOLID 
+- @Primary 
+```
+
+    class Person {
+        private int pid; 
+        private String pname; 
+    }
+    class Employee extends Person {
+        private Address address; 
+        private Office office; 
+    }
+    class Address {
+        private int hNo; 
+        private String street; 
+        private String city; 
+        ... 
+    }
+    class Office {
+
+    }
+
+    @Configuration 
+    class AppConfig {
+        
+        @Bean ("my-employee)
+        public Employee getEmployee() {
+            return new Employee();
+        }
+        @Primary 
+        @Bean 
+        public Address getAddress() {
+            return new Address();
+        }
+
+        @Primary 
+        @Bean 
+        public Office getOffice() {
+            return new Office();
+        }
+
+
+        @Primary 
+        @Bean 
+        public Person getPerson() {
+            return new Person();
+        }
+    }
+
+
+```
+

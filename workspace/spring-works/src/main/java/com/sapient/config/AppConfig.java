@@ -2,6 +2,7 @@ package com.sapient.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.Scope;
 
@@ -13,6 +14,7 @@ import com.sapient.dao.DummyEmployeeDAO;
 import com.sapient.dao.JDBCEmployeeDAO;
 
 import lombok.extern.slf4j.Slf4j;
+
 
 @Configuration
 @Slf4j
