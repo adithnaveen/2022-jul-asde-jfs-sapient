@@ -17,7 +17,4 @@ public class Mobile {
 	
 	@Autowired
 	private Speaker speaker; 
-	
-	
-	
 }

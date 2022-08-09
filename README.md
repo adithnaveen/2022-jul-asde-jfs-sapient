@@ -1491,3 +1491,50 @@ Mobile is : Mobile(camera=Camera(type=vga), screen=Screen(len=6, bre=4, screenTy
         com.sapieng.beans.Mobile.getSpeaker(*)
         com.sapieng.beans.Mobile.getSpeaker(..)
     ```
+
+- Web Server 
+    - Java 
+        - Tomcat 
+        - Jetty 
+        - Web logic 
+        - Web sphere 
+        - jboss
+        - glassfish 
+        - Netty (reactive)
+    - Php
+        - Apache 
+    - python 
+        - Django 
+    - .net 
+        - iis 
+
+```
+    The DD 
+    web.xml 
+
+    <servlet> 
+        <servlet-name>hello</servlet-name>
+        <servlet-class>com.sapient.HelloWorld</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+
+    // HttpServlet class shall have the capability to take http request and give http response 
+    class HelloWorld extends HttpServlet {
+
+    }
+
+```        
+
+
+```
+    int *ptr; 
+    ptr = (int) malloc(100); 
+
+
+    free(ptr); 
+```
