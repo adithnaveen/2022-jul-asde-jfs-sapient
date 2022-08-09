@@ -3,6 +3,7 @@ package com.sapient.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.Scope;
 
@@ -40,7 +41,7 @@ public class AppConfig {
 	}
 	
 	/// building mobile 
-	
+	@Primary
 	@Bean
 	public Mobile getMobile() {
 		return new Mobile();

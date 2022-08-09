@@ -1475,3 +1475,19 @@ Mobile is : Mobile(camera=Camera(type=vga), screen=Screen(len=6, bre=4, screenTy
 
 ```
 
+
+-- Bean post processor 
+```
+    Mobile 
+        - camera 
+        - speaker 
+        - screen 
+
+```
+
+-- aop
+
+    ```
+        com.sapieng.beans.Mobile.getSpeaker(*)
+        com.sapieng.beans.Mobile.getSpeaker(..)
+    ```
