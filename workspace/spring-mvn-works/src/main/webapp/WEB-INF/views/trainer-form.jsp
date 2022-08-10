@@ -5,7 +5,7 @@
 
 <div class="row">
 	<div class="col">
-		<form:form modelAttribute="trainer" action="" method="post">
+		<form:form modelAttribute="trainer" action="save-trainer" method="post">
 			<div class="row">
 				<div class="col col-md-6">
 					<div class="row md-3">
@@ -37,9 +37,12 @@
 							<form:input path="trainerIncome" cssClass="form-control" />
 						</div>
 					</div>
+					<button class="btn btn-danger">Submit</button>
+				</div>
+				<div class="col col-md-6">
+				Some Other Content 
 				</div>
 				
-				<button class="btn btn-danger">Submit</button>
 			</div>
 		</form:form>
 	</div>

@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -33,5 +34,16 @@ public class TrainerController {
 		Trainer trainer = new Trainer(); 
 		model.addAttribute("trainer", trainer); 
 		return "trainer-form";
+	}
+	
+	@RequestMapping(method = RequestMethod.POST, path ="/save-trainer")
+	public String saveTrainer(@ModelAttribute("trainer") Trainer trianer, Model model) {
+		
+		if(dao.addTrainer(trianer)!=null) {
+			model.addAttribute("msg", "Trainer Added Successfully");
+			return "success"; 
+		} 
+		
+		return "/";
 	}
 }
