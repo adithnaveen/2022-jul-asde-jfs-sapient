@@ -20,10 +20,18 @@ public class TrainerController {
 	public String getAllTrainers(Model model) {
 		
 		List<Trainer> trainers = dao.getTrainers();
-		
+		System.out.println(trainers);
 		model.addAttribute("TRAINERS", trainers); 
+		model.addAttribute("TITLE", "Trainers List Goes Here"); 
 		
 		return "show-trainers";
 	}
 	
+	// show the form
+	@RequestMapping(method =RequestMethod.GET, path = "/add-trainer")
+	public String addTrainer(Model model) {
+		Trainer trainer = new Trainer(); 
+		model.addAttribute("trainer", trainer); 
+		return "trainer-form";
+	}
 }

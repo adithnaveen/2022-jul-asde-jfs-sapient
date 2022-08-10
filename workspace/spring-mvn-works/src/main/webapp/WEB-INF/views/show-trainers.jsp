@@ -1,18 +1,37 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="ps" %>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Trainer Works</title>
+<%@ include file="./header.jspf" %>
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+	<div class="alert alert-danger">
+		<div class="container">
+			<h3 style="align:center">${TITLE}</h3>
+		</div>
+	</div>
 
 
+	<div style="min-height: 500px">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Trainer ID</th>
+					<th>Trainer Name</th>
+					<th>Trainer Email</th>
+					<th>Trainer Income</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<ps:forEach items="${TRAINERS}" var="t" varStatus="status">
+					<tr>
+						<td>${status.index+1}</td>
+						<td>${t.trainerId}</td>
+						<td>${t.trainerName }</td>
+						<td>${t.trainerEmail }</td>
+						<td>${t.trainerIncome }</td>
+					</tr>
+				</ps:forEach>
+			</tbody>
+		</table>
+	</div>
 
-</body>
-</html>
+<%@ include file="./footer.jspf" %>
