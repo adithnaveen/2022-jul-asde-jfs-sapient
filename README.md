@@ -1561,3 +1561,32 @@ return example
 
   <property name="prefix" value="/WEB-INF/views/" />
 		<property name="suffix" value=".jsp" />
+
+
+- spring mvc works
+
+- maven dependencies 
+
+- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api/4.0.1
+
+- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl/1.2
+
+- https://mvnrepository.com/artifact/org.springframework/spring-context
+
+
+
+
+
+
+flow of spring mvc  application 
+
+1. http://localhost:9090/spring-mvc-works 
+2. it invokes the welcome file index.jsp 
+    2.1 The configuration is loaded with @Configuration 
+    2.2 it becomes web appliaction with @EnableWebApplication 
+    2.3 the context is give for servlet with name called ds for DispatcherServlet  -> / 
+3. when clicked on Click Me on the page
+    3.1 looks for hello in controller as you have mentioned in 2.2 
+    3.2 the resource is found then it returns hello 
+    3.3 which shall be given to InternalResourceViewResolver /WEB-INF/pages/hello.jsp 
+    3.4 Then the file is invoked 
