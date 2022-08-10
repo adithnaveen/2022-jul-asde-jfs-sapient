@@ -18,25 +18,19 @@ public class DBConnection {
 	public static Connection getMysqlConnection() {
 		// load the driver 
 		try {
-			
-			Properties prop = new Properties(); 
-			prop.load(new FileInputStream("jdbc-works/db.properties"));
-			
-			Class.forName(prop.getProperty("driver"));
+		
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			return  DriverManager.getConnection
 						(
-						prop.getProperty("url"), 
-						prop.getProperty("username", "root"), 
-						prop.getProperty("password"));
+						"jdbc:mysql://localhost/sapient_aug_2022", 
+						"root", 
+						"kanchan@1");
 
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
 			e.printStackTrace();
-		} catch(IOException ioe) {
-			ioe.printStackTrace();
-		}
-		
+		} 
 		return null; 
 	}
 	
