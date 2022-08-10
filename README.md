@@ -1538,3 +1538,26 @@ Mobile is : Mobile(camera=Camera(type=vga), screen=Screen(len=6, bre=4, screenTy
 
     free(ptr); 
 ```
+
+
+# Day 12 
+
+```
+  <servlet>
+  	<servlet-name>mycompany</servlet-name>
+  	<servlet-class>org.spring.......DispatcherServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>mycompany</servlet-name>
+  	<url-pattern>/*</url-pattern>
+  </servlet-mapping>
+  
+  ```
+
+return example 
+
+/WEB-INF/views/example.jsp
+
+  <property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
