@@ -19,3 +19,9 @@
 # branching stages 
 > https://nvie.com/posts/a-successful-git-branching-model/
 
+# mongodb spring boot properties 
+> https://docs.spring.io/spring-boot/docs/2.0.0.RELEASE/reference/html/boot-features-nosql.html
+
+
+
+

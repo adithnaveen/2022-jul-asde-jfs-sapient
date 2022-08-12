@@ -1590,3 +1590,51 @@ flow of spring mvc  application
     3.2 the resource is found then it returns hello 
     3.3 which shall be given to InternalResourceViewResolver /WEB-INF/pages/hello.jsp 
     3.4 Then the file is invoked 
+
+
+
+
+# Day 13 
+    - Spring 5.x.x 
+    - Spring 3.x started using Annotation + XML 
+    - Spring 4.x - mostly on annotation 
+    - Represenationl State (REST)
+    - REST
+        - Jersey 
+        - RestLet
+        - RestEazy 
+        - SpringBoot 
+
+- https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.2&packaging=jar&jvmVersion=11&groupId=com.rest-works&artifactId=rest-works&name=rest-works&description=building%20rest%20api%20performing%20crud%20operations&packageName=com.rest-works.rest.works&dependencies=lombok,web,devtools,data-mongodb
+
+
+
+MongoRepository already has it 
+findById(ID id);
+
+name 
+findByName(String name)
+
+
+findByEmail(String name)
+
+
+- Richarson Maturity Model 
+    - RRM LEVEL 0 
+        - swamp of POX 
+    - RRM LEVEL 1 
+        -  individual URIs (still all typically POST)
+        - userInsert 
+        - userDelete 
+        - userUpdate
+        - userDelete 
+    - RRM LEVEL 2 
+        - GET /user
+        - GET /user/{userID}
+        - POST /user
+        - PUT /user
+        - DELETE /user
+    - RRM LEVEL 3 
+        - HATEOAS (Hypermedia As The Engine of Application State)
+
+
