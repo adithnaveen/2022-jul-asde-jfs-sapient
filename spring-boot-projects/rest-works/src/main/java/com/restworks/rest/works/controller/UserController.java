@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.restworks.rest.works.beans.User;
 import com.restworks.rest.works.exception.UserNotFoundException;
+import com.restworks.rest.works.proxy.UserDetailsProxy;
 import com.restworks.rest.works.service.UserService;
 
 /**
@@ -33,6 +34,10 @@ public class UserController {
 
 	@Autowired
 	private UserService service;
+	
+	@Autowired
+	private UserDetailsProxy userDetailsProxy; 
+	
 	
 	@GetMapping("/")
 	public String health() {
@@ -82,6 +87,13 @@ public class UserController {
 		}else {
 			throw new UserNotFoundException("Sorry User Not Found with Id" + id);
 		}
+	}
+	
+	
+	// making open feign request 
+	@GetMapping("/user-details/{name}")
+	public String getUserAddress( @PathVariable String name) {
+		return userDetailsProxy.getUseAddress(name);
 	}
 }
 

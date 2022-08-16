@@ -48,3 +48,9 @@ DELETE http://localhost:9090/api/user/102 HTTP/1.1
 ### user details 
 
 GET http://localhost:9100/user-details/Yash HTTP/1.1
+
+
+### making open feign request 
+
+GET http://localhost:9090/api/user-details/alok HTTP/1.1
+
