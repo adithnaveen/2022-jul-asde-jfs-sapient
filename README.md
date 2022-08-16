@@ -1605,7 +1605,19 @@ flow of spring mvc  application
         - RestEazy 
         - SpringBoot 
 
+- rest works 
 - https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.2&packaging=jar&jvmVersion=11&groupId=com.rest-works&artifactId=rest-works&name=rest-works&description=building%20rest%20api%20performing%20crud%20operations&packageName=com.rest-works.rest.works&dependencies=lombok,web,devtools,data-mongodb
+
+- user details 
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.2&packaging=jar&jvmVersion=11&groupId=com.user.details&artifactId=user-details&name=user-details&description=building%20rest%20api%20performing%20crud%20operations&packageName=com.user.details.user.details&dependencies=lombok,web
+
+
+- eureka service 
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.2&packaging=jar&jvmVersion=11&groupId=com.sapient&artifactId=discovery-service&name=discovery-service&description=eureka%20server&packageName=com.sapient.discovery.service&dependencies=web,cloud-eureka-server
+
+- api  gateway
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.2&packaging=jar&jvmVersion=11&groupId=com.sapient&artifactId=api-gateway&name=api-gateway&description=eureka%20server&packageName=com.sapient.api.gateway&dependencies=web,cloud-eureka
+
 
 
 
@@ -1638,3 +1650,10 @@ findByEmail(String name)
         - HATEOAS (Hypermedia As The Engine of Application State)
 
 
+rest-works - 9090 
+    - http://localhost:9090/user GET, PUT, POST, DELETE 
+    - http://localhost:9090/user/user-details/yash
+user-details - 9100
+    - http://localhost:9100/user-details/yash
+eureka - 8761
+api-gateway - 8765 
