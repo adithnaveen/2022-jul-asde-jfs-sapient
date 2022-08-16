@@ -22,6 +22,9 @@
 # mongodb spring boot properties 
 > https://docs.spring.io/spring-boot/docs/2.0.0.RELEASE/reference/html/boot-features-nosql.html
 
+# spring documentation 
+> https://spring.io/projects/spring-boot#samples
+
 
 
 

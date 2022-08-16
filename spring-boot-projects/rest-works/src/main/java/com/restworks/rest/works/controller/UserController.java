@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.restworks.rest.works.beans.User;
+import com.restworks.rest.works.exception.UserNotFoundException;
 import com.restworks.rest.works.service.UserService;
 
 /**
@@ -60,13 +61,27 @@ public class UserController {
 	}
 	
 	@PutMapping("/user")
-	public User updateUser( @RequestBody User user) {
-		return service.update(user); 
+	public ResponseEntity<User> updateUser( @RequestBody User user)  throws UserNotFoundException{
+		
+		
+		if(service.getUserByIdA(user.getId()).isPresent()) {
+			User updatedUser = service.update(user); 
+			
+			return ResponseEntity.status(HttpStatus.OK).body(updatedUser); 
+		}else {
+			throw new UserNotFoundException("Sorry User Not Found with Id" + user.getId());
+		}
+		
 	}
 	
 	@DeleteMapping("/user/{id}")
-	public void deleteUser(@PathVariable("id") Integer id) {
-		service.delete(id);
+	public ResponseEntity<String> deleteUser(@PathVariable("id") Integer id) throws UserNotFoundException {
+		if(service.getUserByIdA(id).isPresent()) {
+			service.delete(id);
+			return ResponseEntity.status(HttpStatus.OK).body("User Delete" + id); 
+		}else {
+			throw new UserNotFoundException("Sorry User Not Found with Id" + id);
+		}
 	}
 }
 
