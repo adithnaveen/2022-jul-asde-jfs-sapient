@@ -1616,7 +1616,7 @@ https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.2
 https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.2&packaging=jar&jvmVersion=11&groupId=com.sapient&artifactId=discovery-service&name=discovery-service&description=eureka%20server&packageName=com.sapient.discovery.service&dependencies=web,cloud-eureka-server
 
 - api  gateway
-https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.2&packaging=jar&jvmVersion=11&groupId=com.sapient&artifactId=api-gateway&name=api-gateway&description=eureka%20server&packageName=com.sapient.api.gateway&dependencies=web,cloud-eureka
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.7.2&packaging=jar&jvmVersion=11&groupId=com.sapient&artifactId=api-gateway&name=api-gateway&description=eureka%20server&packageName=com.sapient.api.gateway&dependencies=web,cloud-eureka,cloud-gateway
 
 
 
@@ -1657,3 +1657,11 @@ user-details - 9100
     - http://localhost:9100/user-details/yash
 eureka - 8761
 api-gateway - 8765 
+
+
+
+
+# Day 15 
+Get All Users - http://localhost:9090/api/user
+
+With Api GateWay - Get All Users - http://localhost:8765/REST-WORKS/api/user

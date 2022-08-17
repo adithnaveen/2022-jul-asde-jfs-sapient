@@ -6,6 +6,13 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
+
+// to invoke swagger 
+
+//http://localhost:9090/swagger-ui/index.html
+
+
+
 @EnableFeignClients
 @EnableEurekaClient
 @SpringBootApplication

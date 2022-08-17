@@ -19,6 +19,10 @@ import com.restworks.rest.works.exception.UserNotFoundException;
 import com.restworks.rest.works.proxy.UserDetailsProxy;
 import com.restworks.rest.works.service.UserService;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import io.github.resilience4j.retry.annotation.Retry;
+
 /**
  * 
  * @author naveenkumar
@@ -89,11 +93,21 @@ public class UserController {
 		}
 	}
 	
+	final String USER_DETAILS_SERVICE="USER_DETAILS_SERVICE";
 	
 	// making open feign request 
 	@GetMapping("/user-details/{name}")
+	@CircuitBreaker(name = USER_DETAILS_SERVICE, fallbackMethod = "userDetailsAddressFallBack")
+	
+//	@RateLimiter()
+//	@Retry()
 	public String getUserAddress( @PathVariable String name) {
 		return userDetailsProxy.getUseAddress(name);
+	}
+	
+	// fallback method when user address is not found 
+	public String userDetailsAddressFallBack(Exception e) {
+		return "Sorry User Details Service Is Down";
 	}
 }
 
