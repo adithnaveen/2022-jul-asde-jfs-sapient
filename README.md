@@ -1665,3 +1665,90 @@ api-gateway - 8765
 Get All Users - http://localhost:9090/api/user
 
 With Api GateWay - Get All Users - http://localhost:8765/REST-WORKS/api/user
+
+
+For Front End 
+    - Notepad ++ 
+    - VS Code (we will use this)
+    - Atom 
+    - Sublime 
+    - Brackets 
+
+
+http://localhost:5500/html-works/Example02.html?username=
+
+- Mobile First 
+- Desktop First 
+
+Media Queries 
+    - can render dynamic css based on the width of the screeen + type 
+
+
+http://example.com
+
+
+
+```
+    styles - common styles 
+    h1 font - blue 
+
+    if screen-min-width- 500px
+        then load this css 
+
+
+    if screen-min-width-500px and max is 700 px 
+        then load this css 
+
+
+```
+
+RWD  - Responsive Web Development 
+AWD  - Adaptive Web Development 
+
+
+```
+User Stories 
+Epic: Creating endpoints which adheres to rest full 
+
+technical -
+Story 1.1 : Setting up Eureka, API Gateway, Sleuth, HAL, Actuator, Resilinece4j 
+Given the end point http://localhost:8765/Service-Name/URI 
+When user invokes http://localhost:8765/Service-Name/URI  - GET Request 
+Then on the developer logs the id should be shown for the request make (Sleuth)
+When http://localhost:Service-portNumber/
+Then HAL browser to be loaded 
+
+Story 1.2 : Setting up Eureka, API Gateway, Sleuth, HAL, Actuator, Resilinece4j 
+Given the end point http://localhost:8765/Service-Name/URI 
+When the invoked service is down 
+Then the fallback message is shown 
+
+
+Story 1.3 : Setting up Eureka, API Gateway, Sleuth, HAL, Actuator, Resilinece4j 
+Given the end point http://localhost:8765/Service-Name/URI 
+When the invoked service is down 
+Then the fallback message is shown 
+And Number of requests retries should be 3 be default 
+
+Business 
+Story : getting all the trainer from the service 
+Given the end point  http://localhost:8765/trainer-service/api/trainer 
+When made a GET request
+Then return the list of trainers in json format 
+
+Story : saving a trainer 
+Given the end point  http://localhost:8765/trainer-service/api/trainer 
+When made a POST request
+Then return the saved trainer object 
+
+payload: 
+{
+    name: String, 
+    email:String, 
+    dob:String, 
+    age:int, 
+    income:double
+}
+
+```
+
