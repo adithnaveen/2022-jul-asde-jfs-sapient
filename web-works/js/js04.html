@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fnGetBGColor() {
+            let bgcolor = window.document.body.getAttribute("bgcolor");
+            console.log(bgcolor);
+        }
+
+        function fnSetBgColor(color) {
+            console.log(color);
+            document.body.setAttribute("bgcolor", color);
+            document.getElementById("mydiv").setAttribute("align", "center");
+            document.getElementById("mydiv").innerHTML = "<p> Color is " + color + "</p>";
+        }
+    </script>
+</head>
+
+<body bgcolor="cyan">
+    <button onclick="fnGetBGColor()">fnGetBGColor</button>
+
+    <button onmouseover="fnSetBgColor('cyan')">Cyan</button>
+    <button onmouseover="fnSetBgColor('red')">Red</button>
+    <button onmouseover="fnSetBgColor('blue')">Blue</button>
+    <button onmouseover="fnSetBgColor('green')">Green</button>
+    <button onmouseover="fnSetBgColor('white')">White</button>
+
+    <div id="mydiv"></div>
+
+</body>
+
+</html>

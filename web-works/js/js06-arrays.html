@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function fnArray1() {
+            let arr = new Array();
+            arr[0] = "hello";
+            arr[1] = 123;
+            arr[2] = true;
+            arr[3] = new Person();
+
+            for (let i = 0; i < arr.length; i++) {
+                console.log(arr[i]);
+            }
+
+        }
+
+        function fnArray2() {
+            let weeks = new Array("Sun", "Mon", "Tue");
+
+            // for (let temp in weeks) {
+            //     console.log(weeks[temp]);
+            // }
+
+            // or 
+            for (let temp of weeks) {
+                console.log(temp)
+            }
+            console.log(weeks);
+            weeks.push("Wed", "Thu");
+            console.log(weeks);
+            weeks.pop();
+            console.log(weeks);
+            weeks.unshift("Sat");
+            console.log(weeks);
+            weeks.shift();
+            console.log(weeks);
+
+            // weeks.splice(1, 1, "SOMEDATA", "ANOTHERDATA");
+            weeks.splice(1, 1);
+            console.log(weeks);
+        }
+        function Person() {
+            console.log("Person");
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="fnArray1()">fnArray1</button>
+    <button onclick="fnArray2()">fnArray2</button>
+</body>
+
+</html>

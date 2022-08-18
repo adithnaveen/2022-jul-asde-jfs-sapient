@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function fnRegEx1() {
+            let myExp = new RegExp("ll");
+            console.log("Hello".match(myExp))
+        }
+
+        function fnRegEx2() {
+            // 0.0.0.0 to 999.999.999.999 -> 192.2.3.5
+            let ipAddress = prompt("Enter Your IP Address", "192.168.2.3");
+            let ipRegExp = /\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/;
+
+            if (ipAddress.match(ipRegExp).toString() === ipAddress) {
+                console.log(ipAddress.match(ipRegExp));
+                alert("Valid IP");
+            } else {
+                alert("Invalid IP");
+            }
+        }
+
+        function fnRegEx3() {
+            // email validation - TODO
+        }
+
+    </script>
+</head>
+
+<body>
+    <button onclick="fnRegEx1()">fnRegEx1()</button>
+    <button onclick="fnRegEx2()">fnRegEx2()</button>
+</body>
+
+</html>

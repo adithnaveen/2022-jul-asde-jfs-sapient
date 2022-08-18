@@ -1765,3 +1765,19 @@ x= "hi";
 
 Function / Method Overloading 
 - in java script trivial 
+
+
+- DOM, SAX, StAX
+
+```
+    <html>
+        <head>
+        </head>
+        <body>
+            <p> hi</p>
+            <p> hiikkk </p>
+        <body>
+    </html>
+```
+
+ <p> - p - hi 
