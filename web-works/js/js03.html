@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>working with functions</title>
+
+
+    <script type="text/javascript">
+        function Person(pid, pname) {
+            this.pid = pid;
+            this.pname = pname;
+
+
+            var fnPrivate = function () {
+                console.log("In Private - Person Id : " + this.pid);
+                console.log("In Private - Perosn Name : " + this.pname);
+
+            }
+            // privilleged functions, which shall help to call private functions 
+            this.fnPrevillegedFunctio = function () {
+                fnPrivate();
+            }
+        }
+
+        // public methods are declared with prototype 
+        Person.prototype.display = function () {
+            console.log("Person Id : " + this.pid);
+            console.log("Perosn Name : " + this.pname);
+
+        }
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        per = new Person(101, "Satya");
+        per.display();
+        per.fnPrevillegedFunctio();
+        console.log(per);
+    </script>
+</body>
+
+</html>

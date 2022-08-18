@@ -1752,3 +1752,16 @@ payload:
 
 ```
 
+
+# Day 16 
+
+var x = 100; 
+x= "hi"; 
+
+
+- prompt return String
+- alert return void 
+- confirm return boolean 
+
+Function / Method Overloading 
+- in java script trivial 
