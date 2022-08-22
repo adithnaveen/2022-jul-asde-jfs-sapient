@@ -1806,5 +1806,60 @@ Function / Method Overloading
         ```
     - promise 
     - you can write class 
+    - java script for validation 
+
 - Introduction to React JS 
 - 
+
+- React Js - Facebook (library)
+- Angular - Google (Framework)
+- Back bone  (library)
+- vuejs (framework)
+- nest js (framework)
+- can js (library)
+- dustjs.... (library)
+- jquery (library)
+
+
+- framework 
+    - SPA
+    - to hit to end point 
+    - to test 
+    - for reactive approach -
+    .... 
+
+- library 
+    - JSX 
+    - virtual dom 
+    - fetch, axios 
+```
+    <head>
+        <style>
+            .headler {
+                min-heigh:300px; 
+                display: block; 
+                background-color:orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header" class="header">
+        </div>
+
+        <div id="main">
+        </div>
+
+        <div id="aside">
+        </div>
+
+        <div id="footer">
+        </div>
+
+        
+    </body>
+```
+
+
+- Components 
+    - class - stateful - extends Component (idea of life cycle comes into picture) - state 
+    - function - stateless 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function fnValidateForm() {
+            let userName = document.myform.uname.value;
+            let password = document.myform.password.value;
+
+            if (userName.length < 6) {
+                alert("Sorry User Name missing");
+                return false;
+            }
+
+            if (password.length < 6) { // some more condition like checking for 1 spl char
+                alert("Password should have min 6 chars")
+                return false;
+            }
+            alert("Form Submitted successfully...")
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Login Form</h1>
+
+    <form action="" name="myform" onsubmit="return fnValidateForm()">
+        Enter User Name <input type="text" name="uname" id="uname"><br />
+        Enter Password<input type="password" name="password" id="password">
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
