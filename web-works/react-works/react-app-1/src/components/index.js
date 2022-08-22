@@ -16,6 +16,7 @@ class App extends Component {
             <>
                 <AppHeader company="Publicis Sapient" place="Bengaluru" />
                 <AppComponent emp={employee} />
+
                 <AppFooter year="2022" />
             </>
         );
