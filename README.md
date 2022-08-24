@@ -1863,3 +1863,36 @@ Function / Method Overloading
 - Components 
     - class - stateful - extends Component (idea of life cycle comes into picture) - state 
     - function - stateless 
+
+
+
+# Day 18 
+- Events & methods
+    - if you mutate state variable render function is called, so the view is updated 
+
+    ```
+         <button className="btn btn-danger"
+                    onClick={
+                        this.decrement
+                    }>Decrement</button>
+
+
+                <button className="btn btn-success"
+                    onClick={() =>
+                        this.incrementOrDecrement(1)
+                    }>INCR</button>
+    ```
+- Stateless and stateful component
+- nesting component , Forms & Inputs
+- Lifecycle of React Staful Component
+- Higher Order Component 
+- CSS Styling
+- Form Validation 
+
+- npm dependencies 
+    - npm i ---- 
+    - npm i --save-dev 
+Example 
+- npm install bootstrap 
+- npm i --save-dev jest 
+
