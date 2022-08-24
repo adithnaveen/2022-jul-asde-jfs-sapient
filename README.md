@@ -1883,7 +1883,10 @@ Function / Method Overloading
                     }>INCR</button>
     ```
 - Stateless and stateful component
-- nesting component , Forms & Inputs
+- Forms & Inputs
+    - un-controlled components (deprecated)
+    - Controlled component 
+- nesting component 
 - Lifecycle of React Staful Component
 - Higher Order Component 
 - CSS Styling
