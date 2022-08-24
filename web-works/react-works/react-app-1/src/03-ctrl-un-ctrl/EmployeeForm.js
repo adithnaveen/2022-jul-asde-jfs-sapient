@@ -6,11 +6,47 @@ class EmployeeForm extends Component {
         name: "",
         email: "",
         contact: "",
-        pic: ""
+        pic: "",
+        formError: {
+            name: "Enter Employee Name",
+            email: "Enter Email",
+            contact: "Enter Contact"
+        }
     }
 
     tfHandler = (evt) => {
-        console.log(evt);
+
+        let { name, value } = evt.target;
+
+        let { formError } = this.state;
+        switch (name) {
+            case 'name':
+                if (!value || value.length === 0) {
+                    formError.name = "Enter Employee Name";
+                } else if (value.length < 3 || value.length > 10) {
+                    formError.name = "Employee Name should be betwen 3 to 10 chars";
+                } else {
+                    formError.name = "";
+                }
+                break;
+            case 'email':
+                if (!value || value.length === 0) {
+                    formError.email = "Enter Required";
+                } else if (!value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+                    formError.email = "Invalid Email Address"
+                } else {
+                    formError.email = "";
+                }
+                break;
+            case 'contact':
+                break;
+            default:
+                break;
+        }
+
+
+        this.setState({ [name]: value });
+
     }
     submitHandler = (event) => {
         event.preventDefault();
@@ -21,7 +57,7 @@ class EmployeeForm extends Component {
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col">
+                    <div className="col-md-6">
                         <form className="form-group" onSubmit={this.submitHandler}>
 
                             <div className="form-group row">
@@ -37,7 +73,7 @@ class EmployeeForm extends Component {
                                 <div className="col-md-8">
                                     <input type="text"
                                         onChange={this.tfHandler}
-                                        id="email" className="form-control" value={this.state.email} />
+                                        name="email" id="email" className="form-control" value={this.state.email} />
                                 </div>
                             </div>
 
@@ -46,7 +82,7 @@ class EmployeeForm extends Component {
                                 <div className="col-md-8">
                                     <input type="text"
                                         onChange={this.tfHandler}
-                                        id="contact" className="form-control" value={this.state.contact} />
+                                        name="contact" id="contact" className="form-control" value={this.state.contact} />
                                 </div>
                             </div>
 
@@ -56,13 +92,20 @@ class EmployeeForm extends Component {
                                 <div className="col-md-8">
                                     <input type="text"
                                         onChange={this.tfHandler}
-                                        id="pic" className="form-control" value={this.state.pic} />
+                                        name="pic" id="pic" className="form-control" value={this.state.pic} />
                                 </div>
                             </div>
 
                             <button className="btn btn-primary">Submit</button>
                         </form>
                     </div>
+
+                    <div className="col-md-6">
+                        <h4>State : </h4>
+                        <pre>{JSON.stringify(this.state, null, 3)}</pre>
+
+                    </div>
+
                 </div>
             </div>
         );
