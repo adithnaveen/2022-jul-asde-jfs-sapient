@@ -11,7 +11,8 @@ class EmployeeForm extends Component {
             name: "Enter Employee Name",
             email: "Enter Email",
             contact: "Enter Contact"
-        }
+        },
+        errorMessages: ""
     }
 
     tfHandler = (evt) => {
@@ -31,7 +32,7 @@ class EmployeeForm extends Component {
                 break;
             case 'email':
                 if (!value || value.length === 0) {
-                    formError.email = "Enter Required";
+                    formError.email = "Email Required";
                 } else if (!value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
                     formError.email = "Invalid Email Address"
                 } else {
@@ -39,18 +40,48 @@ class EmployeeForm extends Component {
                 }
                 break;
             case 'contact':
+                if (!value || value.length === 0) {
+                    formError.contact = "Contact Required ";
+                } else if (!value.match(/^\d{10,12}$/)) {
+                    formError.contact = "Invalid Contact should be between 10,12"
+                } else {
+                    formError.contact = "";
+                }
+
                 break;
             default:
                 break;
         }
 
 
-        this.setState({ [name]: value });
+        this.setState({ [name]: value, formError });
 
     }
     submitHandler = (event) => {
         event.preventDefault();
-        console.log(this.state);
+
+
+        let { formError } = this.state;
+
+        if (this.validateForm(formError)) {
+            alert("Form Submitted...");
+        } else {
+            let errorMessages = Object.values(formError).
+                map((err, idx) => err.length === 0 ? null : <li key={idx}>{err}</li>)
+            this.setState({ errorMessages });
+        }
+
+
+        let { name, contact, email, pic } = this.state;
+        console.log(name, contact, email, pic);
+
+    }
+
+
+    validateForm = (formError) => {
+        let valid = true;
+        Object.values(formError).forEach((err) => valid = valid && err.length === 0);
+        return valid;
     }
 
     render() {
@@ -101,6 +132,12 @@ class EmployeeForm extends Component {
                     </div>
 
                     <div className="col-md-6">
+
+                        <ul>
+                            {this.state.errorMessages}
+                        </ul>
+
+                        <hr />
                         <h4>State : </h4>
                         <pre>{JSON.stringify(this.state, null, 3)}</pre>
 
