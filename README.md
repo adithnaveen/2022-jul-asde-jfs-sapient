@@ -1913,9 +1913,24 @@ Example
         class MyComponent extends Component {}
     ```
 - Higher Order Component 
-- CSS Styling
+    ```
+        class ContactList extends Contact {
+
+        }
+
+        export defauult Loading('contacts')(ContactList)
+
+
+        class ProductList extends Contact {
+
+        }
+
+        export defauult Loading('products')(ProductList)
+    ```
+- CSS Styling - styled components
 - Hooks, Error Boundaries
 - React.lazy and Suspense 
+    - lazy loading 
 - CSR/SSR
 - fetch with life cycle components 
     - you use fetch function to fetch 
@@ -1948,4 +1963,15 @@ function AppComponent (props) {
     );
 } 
 
+```
+
+-- post fetch 
+
+```
+    fetch("http://localhost:4000/contacts", {
+        'content-type':'application/json", 
+        'body': JSON.stringfy(contact)
+    })
+    .then(rep => rep.json())
+    .then(data... )
 ```

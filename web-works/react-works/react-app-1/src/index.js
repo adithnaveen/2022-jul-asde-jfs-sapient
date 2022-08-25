@@ -10,7 +10,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 // import App from './03-ctrl-un-ctrl';
 // import App from './03-ctrl-un-ctrl/index-ctrl';
 // import App from './04-life-cycle';
-import App from './05-contacts-fetch';
+// import App from './05-contacts-fetch';
+import App from './06-hoc';
 
 
 

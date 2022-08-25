@@ -93,3 +93,7 @@ Content-Type: application/json
   "gender": "Male",
   "pic": "https://randomuser.me/api/portraits/med/men/3.jpg"
 }
+
+
+###
+DELETE http://localhost:4000/contacts/1 HTTP/1.1

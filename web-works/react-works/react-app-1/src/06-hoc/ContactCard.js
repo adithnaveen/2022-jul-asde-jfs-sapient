@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Title, Button } from './style';
+import { Title, Button } from '../05-contacts-fetch/style';
 
 const ContactCard = ({ contact }) => {
     return <div className="card" style={{ width: '500px', height: '120px', margin: '10px', padding: '7px' }}>
