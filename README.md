@@ -1902,3 +1902,20 @@ Example
 - npm install bootstrap 
 - npm i --save-dev jest 
 
+# Day 19 
+- nesting component 
+- Lifecycle of React Staful Component
+
+    ```
+        class Component  {
+            // has functions nad properties 
+        }
+        class MyComponent extends Component {}
+    ```
+- Higher Order Component 
+- CSS Styling
+- Hooks, Error Boundaries
+- React.lazy and Suspense 
+- CSR/SSR
+
+
