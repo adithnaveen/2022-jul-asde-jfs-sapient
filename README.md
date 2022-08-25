@@ -1917,5 +1917,35 @@ Example
 - Hooks, Error Boundaries
 - React.lazy and Suspense 
 - CSR/SSR
+- fetch with life cycle components 
+    - you use fetch function to fetch 
+    - you can use axios to fetch 
 
 
+
+```
+function AppComponent (props) {
+    return(
+ <div className='app-content'>
+                <h3>Employee Details</h3>
+                <table style={{ border: "1px solid black" }}>
+                    <tbody>
+                        <tr>
+                            <td>Employee Name </td>
+                            <td>{emp.name}</td>
+                        </tr>
+                        <tr>
+                            <td>Employee Exp</td>
+                            <td>{emp.experience}</td>
+                        </tr>
+                        <tr>
+                            <td>Employee Exp</td>
+                            <td>{emp.email}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div >
+    );
+} 
+
+```

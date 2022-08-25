@@ -71,3 +71,25 @@ GET http://localhost:8765/rest-works/actuator HTTP/1.1
 ### making open feign request with api gateway + resilience4j
 
 GET http://localhost:8765/rest-works/api/user-details/alok HTTP/1.1
+
+
+### invoking contacts mock data 
+
+
+GET http://localhost:4000/contacts HTTP/1.1
+
+###
+GET http://localhost:4000/contacts/2 HTTP/1.1
+
+
+###
+POST http://localhost:4000/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+  "first_name": "Naveen",
+  "last_name": "Kumar",
+  "email": "naveen@yandex.ru",
+  "gender": "Male",
+  "pic": "https://randomuser.me/api/portraits/med/men/3.jpg"
+}
