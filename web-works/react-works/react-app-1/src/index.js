@@ -12,7 +12,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 // import App from './04-life-cycle';
 // import App from './05-contacts-fetch';
 // import App from './06-hoc';
-import App from './07-multi-component';
+// import App from './07-multi-component';
+import App from './08-lazy';
 
 
 
