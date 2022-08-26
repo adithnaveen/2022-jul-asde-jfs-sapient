@@ -1975,3 +1975,63 @@ function AppComponent (props) {
     .then(rep => rep.json())
     .then(data... )
 ```
+
+
+# Day 20 
+
+
+-- old style 
+```
+    var oldComponentStyle = React.createClass({
+        render:  function() {
+            return(
+                <div>
+                    <h1>Hey wondering i was the first syntax of React </h1>
+                </div>
+            )
+        }, 
+        myrender: function() {
+            return(
+                <div>
+                    <h2>Hey hit is myrender</h2>
+                </div>
+            )
+        }
+    })
+```
+
+- class based 
+```
+    class HistoricalClasses extends React.Comonent {
+        render() {
+            return <div><h2>I'm still a old Guy</h2></div>
+        }
+    }
+```
+
+- function based 
+```
+function FunctionStyle() {
+    render() {
+        return(
+                <div>
+                    i was your friend u remember 
+                </div>
+
+        )
+    }
+}
+```
+
+- new age person 
+```
+    function ComonentOfToday() {
+        const [name, setName] = useState("Simar"); 
+        return(
+                <div>
+                    <h1>What a journey with react  {name} </h1>
+                </div>
+
+        ) 
+    }
+```
