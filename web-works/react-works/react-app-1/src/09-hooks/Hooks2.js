@@ -12,7 +12,7 @@ const App = () => {
     useEffect(() => {
         document.title = `Value of Count : ${count}`;
         console.log(`i'm in use effect... ${count}`);
-    }, [count])
+    })
 
 
     return (
