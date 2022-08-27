@@ -16,6 +16,6 @@ const ContactCard = ({ contact }) => (
             </div>
         </div>
     </div>
-    </div >
+
 )
 export default ContactCard; 
