@@ -1,4 +1,7 @@
-const ContactCard = ({ contact }) => (
+import { deleteContact } from '../actions/contacts-action';
+import { connect } from 'react-redux';
+
+const ContactCard = ({ contact, removeContact }) => (
     <div className="card">
         <div className="row">
 
@@ -11,10 +14,15 @@ const ContactCard = ({ contact }) => (
                     <h4 className="card-title">{contact.gender === 'Male' ? "Mr. " : "Ms/Mrs. "}{contact.first_name}</h4>
                     <h4 className="card-text">{contact.email}</h4>
                     <h4 className="card-text">{contact.phone}</h4>
-
                 </div>
+                <div className="col-md-1"><button className="btn btn-danger"
+                    onClick={() => {
+                        removeContact(contact.id)
+                    }}
+                >X</button></div>
             </div>
+
         </div>
     </div>
 )
-export default ContactCard; 
+export default connect(null, { removeContact: deleteContact })(ContactCard); 

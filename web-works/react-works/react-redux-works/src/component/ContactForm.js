@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import { addContact } from '../actions/contacts-action';
+import { connect } from 'react-redux';
 class ContactForm extends Component {
 
     state = {
@@ -74,9 +75,12 @@ class ContactForm extends Component {
         this.setState({ errorMessages })
 
         if (this.validateForm(this.state.formErrors)) {
-            let { name, email, phone, picture } = this.state;
+            let { first_name: name, email, phone, picture } = this.state;
             let contact = { name, email, phone, picture };
-            console.log(contact);
+            this.props.addContact(contact);
+
+
+
         }
     }
 
@@ -120,4 +124,4 @@ class ContactForm extends Component {
     }
 }
 
-export default ContactForm;
+export default connect(null, { addContact })(ContactForm);
