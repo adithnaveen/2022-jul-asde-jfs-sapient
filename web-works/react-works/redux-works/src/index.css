@@ -10,4 +10,9 @@ body {
 
 .btn {
     margin-top: 10px;
+    margin-right: 10px;
+}
+
+.list-group-item {
+    margin-bottom: 5px;
 }

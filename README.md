@@ -2035,3 +2035,9 @@ function FunctionStyle() {
         ) 
     }
 ```
+
+
+# Day 21 
+
+    const [number, setNumber] = useReducer((number, newNumber) => number + newNumber, 0);
+    const [store/state, dispatch] = useReducer((state, dispatcher) => { switch }, initialValue);
