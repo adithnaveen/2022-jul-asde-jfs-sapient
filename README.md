@@ -2041,3 +2041,13 @@ function FunctionStyle() {
 
     const [number, setNumber] = useReducer((number, newNumber) => number + newNumber, 0);
     const [store/state, dispatch] = useReducer((state, dispatcher) => { switch }, initialValue);
+
+
+
+
+{
+  type: 'ADD_CONTACT', data:{name:'Rohan', email:'rohan@example.com'}
+}
+{
+  type: 'DELETE_CONTACT', data:1
+}
