@@ -92,7 +92,9 @@ class ContactForm extends Component {
                     <div className="form-group row">
                         <label htmlFor="name" className="control-label col-md-4">Name</label>
                         <div className="col-md-8">
-                            <input value={this.state.name} onChange={this.tfHandler} type="text" className="form-control" name="name" />
+                            <input value={this.state.name} onChange={this.tfHandler} type="text"
+                            placeholder='name'
+                            className="form-control" name="name" />
                         </div>
                     </div>
                     <div className="form-group row">

@@ -16,7 +16,6 @@ test('enter name in the text ', () => {
     userEvent.type(screen.getByText("Phone number"), 'hello');
     userEvent.type(screen.getByText("URL"), 'hello');
 
-
     const addToListBtn = screen.getByText(/Add to list/i);
     userEvent.click(addToListBtn);
 })

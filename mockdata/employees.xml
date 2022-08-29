@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<employees>
+
+    <employee id="101">
+        <name>Naveen</name>
+        <email>naveen@probits.in</email>
+        <address>
+            <houseno>123</houseno>
+            <street>KK Lane</street>
+            <city>bengaluru</city>
+        </address>
+    </employee>
+    <employee id="102">
+        <name>rohan</name>
+        <email>rohan@rohan.in</email>
+        <address>
+            <houseno>556</houseno>
+            <street>Amerian Dream Way Lane</street>
+            <city>Reston</city>
+        </address>
+    </employee>
+
+
+</employees>

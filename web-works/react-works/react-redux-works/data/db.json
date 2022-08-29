@@ -7,7 +7,11 @@
       "email": "tkynston7@tinypic.com",
       "gender": "Male",
       "pic": "https://randomuser.me/api/portraits/med/men/2.jpg",
-      "phone": "895-557-9469"
+      "phone": "895-557-9469", 
+      "address" :{
+        "hno":123, 
+        "street":"somestreet"
+      }
     },
     {
       "id": 9,

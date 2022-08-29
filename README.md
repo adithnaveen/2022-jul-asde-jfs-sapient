@@ -2051,3 +2051,67 @@ function FunctionStyle() {
 {
   type: 'DELETE_CONTACT', data:1
 }
+
+
+```
+    <Router>
+        <nav>
+            <ul>
+                <li>
+                    <Link to="/first-link">First</Link>
+                </liu>
+                <li>
+                    <Link to="/second-link">second</Link>
+                </liu>
+                <li>
+                    <Link to="/third-link">third</Link>
+                </liu>
+            </ul>
+        </nav>
+
+        <Switch>
+            <Route path="/first-link" exact={true}>
+                <FirstComponent /> 
+            </Route>
+            <Route path="/seond-link" exact={true}>
+                <SeondComponent /> 
+            </Route>
+            <Route path="/third-link" exact={true}>
+                <ThirdComponent /> 
+            </Route>
+            <Route path="*">
+                <NotFound /> 
+            </Route>
+        </Switch>
+
+
+    </Router>
+```
+
+
+Assert.equals(expected, actual); 
+
+```
+    test("my testmessage goes here ", () => {
+        // look for the element - testing library 
+        // expect -jest 
+    })
+```
+
+
+
+
+# Day 22 
+- cucumber 
+    - BDD - Behaviour Driven Development tool 
+    - Given (Pre Condition), When(Actual Execution), Then (Post Condition), And(Multiple), But (Excpetion)
+    - Ruby 
+        - Java, Scala, Ruby, Kotlin, Groovy, JavaScript
+
+
+
+
+For Selnium 
+
+- xml 
+- xpath - is a query language for xml 
