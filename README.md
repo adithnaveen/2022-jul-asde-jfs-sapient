@@ -2118,4 +2118,28 @@ For Selnium
 - selenium is an API 
     - lot of interfaces are defined here 
     - each browser people have the implementation of the interfaces 
+
+
+```
+    Feature: save contact - with POM 
+    Scenario: 
+        Given the application is loaded on http://localhost:3000
+        When user enters himanshu
+        And email is himanshu@gmail.com
+        And phone is 9898989898
+        And Click on add to list 
+        Then Find the name called himanshu (ignore case) on the page 
+
+ Scenario: 
+        Given the application is loaded on http://localhost:3000
+        When user enters himanshu
+        And email is himanshu
+        And phone is 9898989898
+        And Click on add to list 
+        Then next t "Add to List" button look for the message called "Not a valid email id"
+
+```
+
+
+
     

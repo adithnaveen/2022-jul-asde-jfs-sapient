@@ -93,8 +93,8 @@ class ContactForm extends Component {
                         <label htmlFor="name" className="control-label col-md-4">Name</label>
                         <div className="col-md-8">
                             <input value={this.state.name} onChange={this.tfHandler} type="text"
-                            placeholder='name'
-                            className="form-control" name="name" />
+                                placeholder='name'
+                                className="form-control" name="name" />
                         </div>
                     </div>
                     <div className="form-group row">
@@ -115,7 +115,7 @@ class ContactForm extends Component {
                             <input value={this.state.picture} onChange={this.tfHandler} type="text" className="form-control" name="picture" />
                         </div>
                     </div>
-                    <button className="btn btn-primary">Add to list</button>
+                    <button className="btn btn-primary" id="submitBtn">Add to list</button>
                 </form>
 
                 <ul>
