@@ -90,25 +90,25 @@ class ContactForm extends Component {
                 <h3>Add a new contact</h3>
                 <form className="form" onSubmit={this.submitHandler}>
                     <div className="form-group row">
-                        <label htmlFor="" className="control-label col-md-4">Name</label>
+                        <label htmlFor="name" className="control-label col-md-4">Name</label>
                         <div className="col-md-8">
                             <input value={this.state.name} onChange={this.tfHandler} type="text" className="form-control" name="name" />
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label htmlFor="" className="control-label col-md-4">Email address</label>
+                        <label htmlFor="email" className="control-label col-md-4">Email address</label>
                         <div className="col-md-8">
                             <input value={this.state.email} onChange={this.tfHandler} type="text" className="form-control" name="email" />
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label htmlFor="" className="control-label col-md-4">Phone number</label>
+                        <label htmlFor="phone" className="control-label col-md-4">Phone number</label>
                         <div className="col-md-8">
                             <input value={this.state.phone} onChange={this.tfHandler} type="text" className="form-control" name="phone" />
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label htmlFor="" className="control-label col-md-4">URL to picture/avatar</label>
+                        <label htmlFor="picture" className="control-label col-md-4">URL</label>
                         <div className="col-md-8">
                             <input value={this.state.picture} onChange={this.tfHandler} type="text" className="form-control" name="picture" />
                         </div>
