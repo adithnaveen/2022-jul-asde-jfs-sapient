@@ -2115,3 +2115,7 @@ For Selnium
 
 - xml 
 - xpath - is a query language for xml 
+- selenium is an API 
+    - lot of interfaces are defined here 
+    - each browser people have the implementation of the interfaces 
+    
