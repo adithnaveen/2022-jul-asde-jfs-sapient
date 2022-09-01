@@ -2151,3 +2151,11 @@ For Selnium
             - Rabbit MQ 
             - Tibco 
             - Mulesoft 
+
+
+
+- working with kafka 
+
+>  ./zookeeper-server-start.sh ../config/zookeeper.properties 
+
+
