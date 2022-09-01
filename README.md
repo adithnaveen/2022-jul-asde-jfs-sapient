@@ -2156,6 +2156,17 @@ For Selnium
 
 - working with kafka 
 
->  ./zookeeper-server-start.sh ../config/zookeeper.properties 
+> ./zookeeper-server-start.sh ../../config/zookeeper.properties 
 
+> ./kafka-server-start.sh ../config/server.properties 
+
+> kafka-topics.sh --bootstrap-server localhost:9092 --list
+
+> kafka-topics.sh --bootstrap-server localhost:9092 --create --topic second-topic 
+
+> kafka-console-producer.sh --bootstrap-server localhost:9092 --topic first-topic
+
+> kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first-topic
+
+> kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first-topic --from-beginning 
 
