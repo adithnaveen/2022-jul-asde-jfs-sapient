@@ -2162,6 +2162,8 @@ For Selnium
 
 > kafka-topics.sh --bootstrap-server localhost:9092 --list
 
+> kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic first-topic 
+
 > kafka-topics.sh --bootstrap-server localhost:9092 --create --topic second-topic 
 
 > kafka-console-producer.sh --bootstrap-server localhost:9092 --topic first-topic

@@ -97,3 +97,12 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:4000/contacts/1 HTTP/1.1
+
+
+
+### kafka works 
+
+POST http://localhost:9090/kafka HTTP/1.1
+Content-Type: application/json
+
+Sample Message from spring boot
