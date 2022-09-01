@@ -2142,4 +2142,12 @@ For Selnium
 
 
 
-    
+# Day23
+    - Kafka
+        - Introduction to Kafka 
+        - ESB - Enterprise Service Bus 
+            - Kafka - Apache
+            - Open MQ 
+            - Rabbit MQ 
+            - Tibco 
+            - Mulesoft 

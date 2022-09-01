@@ -18,4 +18,4 @@
 ## sonar lint eclipse plugin - https://marketplace.eclipse.org/content/sonarlint
 
 
-
+## Apache Kafka -  https://kafka.apache.org/downloads#:~:text=kafka_2.12%2D3.2.0.tgz

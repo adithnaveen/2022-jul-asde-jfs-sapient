@@ -78,7 +78,7 @@ class ContactForm extends Component {
             let { first_name: name, email, phone, picture } = this.state;
             let contact = { name, email, phone, picture };
             this.props.addContact(contact);
-
+            alert("Record saved...");
 
 
         }
