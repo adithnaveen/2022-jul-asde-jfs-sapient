@@ -2298,3 +2298,21 @@ For Selnium
     - Kubernetes 
     - Docker Swarm 
     - Rancher 
+
+
+- user stories 
+    - spotify as ex
+    - weather 
+    - history 
+    - family collaboration 
+    - more options on recommendation 1. is weather 
+    - project should be around on the 5g edge + caching, IOT
+    - high level diagram needed
+    - if its IOT - need an session for the class + trainer 
+
+
+
+1. edge 
+2. performance 
+3. iot 
+4. devops 
