@@ -42,6 +42,74 @@
 
 
 
+# TOC 
+
+
+Week 1 		
+
+Day1	Maven,  OOAD	"Introduction to OOAD & UML 
+Understanding the need of documents, Introduction to Data modelling "	"
+Building Simple Java Project with Maven(Dependencies, Build, Plugins) 
+Overview of Gradle"	Subjective + MCQ
+
+Day 2 	Git Jenkins 	"Recap of Git working with BitBucket, 
+Introduction to DevOps, Devops-Sec ,
+Working with Jenkins - building application with Jenkins, 
+Understanding plugins, creating pipeline with groovy script"		
+
+Day3	MongoDB	MongoDB - NoSQL DB, CRUD, Understnaing & Creating  Indexes, CAP theorem		
+
+Day4	Java	"Understnding Highly Cohesive - 
+Loosely Coupled Systems, Collections & Generics-List, Set, Map"		
+
+Day5	RDBMS, JDBC	RDBMS Concepts, JDBC - CRUD Operations, with postgres DB/Mysql		
+Week 2				
+
+Day6	Java 8	"Java 8 Concepts, functional programming 	"		Subjective + MCQ
+
+Day7	Java 8 + 11	Java 8 Concepts, functional programming, Introduction to Java 11 programming features, introduction to graalvm 		
+
+Day8	TDD, Mockito, Code Quality	Understanding TDD approach Working with JUnit 5, Mockito, Sonarqube, Introduction to Groovy Spock Testing, and usages 		
+
+Day9	Solid Principles	Design Patterns & Principles, SOLID Principles, DRY,YAGNI, Introduction to logging		
+
+Day10	Spring	"Spring IOC, Bean Life Cycle, Bean post processor,Annotation Based, Spring AOP. 	"		
+Week 3				
+
+Day11	Servlets, JSP	Introduction Servlets & JSP 		Subjective + MCQ
+
+Day12	Spring MVC	Spring MVC		
+
+Day13	SpringBoot	Creating a Spring Application using Spring Boot, Performing CRUD Operations with MongoDB  		
+
+Day14	Spring Boot Netflix OSS Tools	Spring Boot + Netflix OSS Tools - Eureka, Swagger, API Gateway, LB, Feign, Hystrix(Resilence4J), Introduction to Circuit Breaker + Ribbon 		
+
+Day15	HTML, JS 	Introduction to HTML, CSS,Javascript, Introduction to Mediaqueries, Object based features, Validating with Javascript, Understanding DOM, Manipulating HTML with DOM. Understanding object hierarchy 		
+
+Week 4				
+
+Day16	JavaScript	Introduction to AJAX, Fetch, Functinal programming, closures, currying, call, async, await.  Introductio to ES6, npm dependencies  Understanding promises & callback		Subjective + MCQ
+
+Day17	React	Introduction to Reactjs, jsx, Stateless and stateful component, nesting component , Forms & Inputs		
+
+Day18	React	Events & methods, Lifecycle, HOC, CSS Styling, Form Validation 		
+
+Day19	React	JSX Introduction, Benefits of JSX, React Components, Hooks, Error Boundaries, React.lazy and Suspense for CSR, CSR/SSR		
+
+Day20	React Redux	React Redux - State management, React Routers, Intrododuction to JEST and Testing React Application		
+
+Week 5				
+
+Day21	Cucumber	Need of BDD, Introduction to Cucumber, Gherkins	Project Work 	Project Work
+
+Day22	Selenium	Understanding e2e Testing, working with Selenium 	Project Work 	
+
+Day23	Kafka	Introduction to Kafka 	Project Work 	
+
+Day24	Docker	Working with Docker, introduction to container orchestration and deploying a spring boot application with k8s + security	Project Work 	
+
+Day25	AWS	AWS - Creating EC2 instances, Creating VPC, understanding NAT, Security policies	Project Work 	
+
 
 # Day 1 
 - Standard
@@ -2172,3 +2240,61 @@ For Selnium
 
 > kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first-topic --from-beginning 
 
+
+
+-- from server when req from spring boot 
+```
+    SendResult 
+    [producerRecord=ProducerRecord
+        (topic=first-topic, partition=null, headers=RecordHeaders(headers = [], isReadOnly = true), 
+        key=null, 
+        value=Sample Message from spring boot1, 
+        timestamp=null), 
+        recordMetadata=first-topic-0@16
+    ]
+```
+
+
+# Day 24 
+- Docker
+    - Working with Docker
+    - Introduction to container 
+
+    ```
+        http://localhost:8080
+        > docker run --name sap-jenkins -p 8080:8080 -p 50000:50000 -v /Users/naveenkumar/Desktop/docker-jenkins:/var/jenkins_home jenkins 
+
+        > docker run --name sap-jenkins3 -p 8080:8080  -p 50000:50000 -v /Users/naveenkumar/Desktop/docker-jenkins:/var/jenkins_home jenkins:2.60.1
+    ```
+    - orchestration
+    - deploying a spring boot application with k8s
+    - security (Understaning)
+
+
+- UI 
+    - ReactJS 
+    - HTML 
+    - CSS 
+    -JAVASCRIPT
+    - Invoke the end point and process + coloring 
+
+- Application 
+    - Spring Boot 
+    - Netflit Tooks
+
+- DB
+    - MongoDB 
+    - Redis 
+
+- Cloud 
+    - AWS 
+
+- Testing 
+    - Gatling
+    - jMeter
+
+
+- Orchestration 
+    - Kubernetes 
+    - Docker Swarm 
+    - Rancher 

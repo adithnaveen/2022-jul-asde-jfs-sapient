@@ -1,5 +1,7 @@
 package com.sapient.kafka;
 
+import java.util.concurrent.ExecutionException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -20,6 +22,13 @@ public class KafkaService {
 	public void sendMessage(String message) {
 		ListenableFuture<SendResult<String, String>>
 			send = template.send(kafkaTopic, message);
-		System.out.println(send);
+		try {
+			SendResult<String, String> sendResult = send.get();
+			
+			System.out.println(send.get());
+		} catch (InterruptedException | ExecutionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
