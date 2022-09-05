@@ -2316,3 +2316,45 @@ For Selnium
 2. performance 
 3. iot 
 4. devops 
+
+
+
+# Day 25 
+
+> docker image build -t spring-boot-image:1 . 
+
+> docker image tag 2022-spring-1:1 adithnaveen/2022-spring-boot-1:1
+
+> docker push adithnaveen/2022-spring-boot-1:1
+
+> docker pull adithnaveen/2022-spring-boot-1:1
+
+> docker run -p 9090:9090 --name spring-boot-app-1 adithnaveen/2022-spring-boot-1:1
+
+> docker run -p 9091:9090 --name spring-boot-app-2 adithnaveen/2022-spring-boot-1:1
+
+
+> docker pull satyasai0922/2022-spring-boot-1:1
+
+- Docker - Contanarization 
+- Kubernetes, Docker Swarm, Rancher - Orchestration 
+
+- kubenetes 
+
+> kubectl create deployment demo --image=adithnaveen/2022-spring-boot-1:1 --dry-run -o=yaml > deployment.yaml
+
+> AWS
+    - Creating VPC
+    - understanding NAT
+    - Security policies
+    - AWS - Creating EC2 instances
+
+
+10.0.0.0/32- max of 1 ip is allocated 
+
+10.0.0.0/24- max of 1 ip is allocated (10.0.0.0 to 10.0.0.255)
+
+10.0.0.0/16- max of 1 ip is allocated (10.0.0.0 to 10.0.255.255)
+
+10.0.0.0/8- max of 1 ip is allocated (10.0.0.0 to 10.255.255.255)
+
