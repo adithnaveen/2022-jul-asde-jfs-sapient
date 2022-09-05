@@ -2358,3 +2358,13 @@ For Selnium
 
 10.0.0.0/8- max of 1 ip is allocated (10.0.0.0 to 10.255.255.255)
 
+
+
+Spring 0 
+- Technical stories 
+    - setup the infra related work 
+    - setting up MS Arch for Backend 
+    - Setting up front end Arch + Cache lib (Varnish)
+    - Setting DB + Server cache DB 
+    - integration the code with sapient tools (Sonar)
+
