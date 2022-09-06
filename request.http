@@ -106,3 +106,10 @@ POST http://localhost:9090/kafka HTTP/1.1
 Content-Type: application/json
 
 Sample Message from spring boot2
+
+
+
+### 
+
+GET https://5gedge.verizon.com/api/mec/eds/mecplatforms
+Authorization: bearerAuth MDM4NTQ1MTAtYTNiNi00YjQyLWFkMTMtMTNmN2RlZGI2NGJj
