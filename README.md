@@ -2368,3 +2368,45 @@ Spring 0
     - Setting DB + Server cache DB 
     - integration the code with sapient tools (Sonar)
 
+
+
+# Prod Phase 
+
+- Coding 
+    - java 
+    - spring boot 
+    - spring test 
+    - react 
+    - testing library 
+- Functionality 
+    - given in sprint basis 
+- DevOps 
+    - Docker 
+    - Jenkins 
+    - Kubernetes 
+- NFR 
+    - UI 
+    - Services
+    - gatling / jmeter 
+    - selenium + cucumber  (Gherkins)
+- DB 
+    - mongodb 
+        - repl server 1+2 
+        - sharing 1 + 3 *  3 
+    - Redis 
+- Infra 
+    - settiup pipeline 
+    - Creating branching strategy 
+    - creating aws instances  + vpc etc 
+- Documentation 
+    - Confluence 
+    - Jira 
+    - .docx 
+    - .xlsx 
+    - .ppt 
+
+
+
+
+1. pull the spring boot application which is deployed on hub.docker.com on aws instance which will be created and host it 
+2. Create VPC 

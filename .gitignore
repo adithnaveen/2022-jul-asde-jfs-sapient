@@ -59,4 +59,6 @@ local.properties
 
 node_modules
 
+secret
+
 .DS_Store

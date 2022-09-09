@@ -113,3 +113,9 @@ Sample Message from spring boot2
 
 GET https://5gedge.verizon.com/api/mec/eds/mecplatforms
 Authorization: bearerAuth MDM4NTQ1MTAtYTNiNi00YjQyLWFkMTMtMTNmN2RlZGI2NGJj
+
+
+
+
+### 
+GET http://35.175.235.252:80/api/user HTTP/1.1
