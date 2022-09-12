@@ -2410,3 +2410,30 @@ Spring 0
 
 1. pull the spring boot application which is deployed on hub.docker.com on aws instance which will be created and host it 
 2. Create VPC 
+
+
+DOD - Defination of Done - mostly technical
+DOR - Defination of Release - mostly function 
+
+
+- To know how to do work log + creating sub task is good or not 
+
+
+
+PASD-233 -> 
+
+
+
+- create repo to - karthikey, 
+
+- discovery-service
+- api-gateway
+- restaurant 
+- customer 
+- promotion 
+- order
+
+
+
+- multi module project 
+- use case diagram, sequence 
