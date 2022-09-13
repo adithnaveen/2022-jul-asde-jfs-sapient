@@ -2437,3 +2437,64 @@ PASD-233 ->
 
 - multi module project 
 - use case diagram, sequence 
+
+
+
+
+
+- Restaurant 
+    - should have table/room - ID 
+    - should maintain the history 
+- Customer 
+    - we should not record too many details of customer 
+        - mobile no should be good 
+- Menu 
+    - Food-Items 
+        - food 
+        - beverages 
+- Order 
+    - Linked to Food-Items 
+    - the order on the food item should be allowed to cancel at different point of time 
+        - at cooking 
+        - on table 
+- Payment 
+    - link to order 
+- Promotion 
+    - to season 
+    - to Joining first time 
+    - to Reataurant 
+- Admin 
+    - does bulk upload of restaurant and items 
+    - 
+
+
+
+
+
+Customer 
+- There shouldn't be registration for the customer rather to have the OTP to validate 
+- can order 
+    - items of Cart 
+- can pay 
+    - payment  
+    - UPI / Cash - this way it looks realistic     
+- view menu 
+
+Restaurant Owner 
+- for restuarant owner we should have registration
+    - he may have to upload the food items over a course of time 
+
+
+Admin
+- does bulk upload of restaurant and items 
+    - 
+
+
+
+| Rest | Mobile (customer) |  Table /Room | Items          | Date                | Order status 
+| 101  | 9900524255        |     1        | A, B, C        | 13-sep-2022 9:57    |    Y
+| 101  | 9900524256        |     1        | A, B, C        | 13-sep-2022 13:57   |    N
+
+
+
+
