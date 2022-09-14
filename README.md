@@ -2498,3 +2498,59 @@ Admin
 
 
 
+# 14-sep-2022 
+
+
+- Run with the presentation 
+    - Siddhart 
+    - Asif 
+
+## pod 1 
+    - Alok - work is done but need to push the code to repo - 
+        >  git commit -m "PASD - setting up actuator" 
+        - Naveen, Evleen, Harish, Abhigyan, Simar 
+    - Abhigyan, Karthik - mongodb setup is donein local system, 
+        - docker compose file is created with karthik 
+        - planned for KT 
+        - totally 14 container, 2 routers, 3 config, 3 shard *3 (1 primary, 2 repl)
+    - Himanshu - react redux application is set, working on code coverage, dependent on Asif 
+
+## pod 2 
+    - Mayank - db modelling, mostly up and there, will share .json file with the team 
+    - Simar - raise pr  to SME + text them, depends on karthikey work 
+    - Asif - setting up sonar on local system, and its working need to integrate with 
+        - sonar from sapient working on it 
+    - rohan - working on aws setup, nat is left 
+        - dev + test server
+            - app + db server - 24 to 32 gb 
+            + jenkins 
+            - t3.large	2	36 8	EBS-Only	Up to 5
+        - production server - 
+            - jenkins 
+            - application server 
+                - c5.4xlarge	 
+            - db server 
+                - d2.4xlarge	
+
+## pod 3 
+    - tejasw - setting up resiliencej4, working with open feign 
+    - nielless - working on pipeline on local system 
+    - yash - working on seq diagram, need review from the SME's + Amit Jha 
+    - satya - sonar working locally, excluded classes not needed, considered only service and controller, backend service 
+        - need to integrate with sapient sonar 
+
+
+
+## pod 4 
+    - pranshu - workin on  sequence diagram  need review from the SME's + Amit Jha 
+    - siddharth - db modelling, mostly up and there, will share .json file with the team 
+    - praneeth - kafka, spring integration on local system is working, need to work with docker 
+        - log4j2 console is working need to setup for file and db 
+    - Kartikey Papnai -  working on folder structure pl raise the PR to sme 
+    - Rishi - working on the jenkins pipe line, working on local system need to integrate with cloud 
+        - having few arch questions 
+
+        
+- planned for future 
+    1. mongodb should be controlled by credentials 
+    2. in mongodb 1 of the repl set should be delayed server for 10 mins for anallysis 
