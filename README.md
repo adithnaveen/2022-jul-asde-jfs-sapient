@@ -2550,7 +2550,66 @@ Admin
     - Rishi - working on the jenkins pipe line, working on local system need to integrate with cloud 
         - having few arch questions 
 
-        
+
 - planned for future 
     1. mongodb should be controlled by credentials 
     2. in mongodb 1 of the repl set should be delayed server for 10 mins for anallysis 
+
+ 
+
+not done 
+PASD-228	Sonarqube Setup - Frontend
+PASD-226	Jenkins Pipeline for back-end
+
+
+spill over 
+PASD-222	DB Modelling   
+PASD-219	Sequence Diagram
+PASD-221	DB Modelling - 1
+PASD-220	Architecture Design 2
+PASD-235	Problem Statement | User Story
+PASD-225	Jenkins Pipeline for Front-End (ReactJS)
+
+
+
+
+
+
+ 
+## 16-sep-2022
+<br />
+
+> port numbers 
+
+
+|-----------------------------| 
+| service | port |end point | 
+| ----------- | ----------- | ----- | 
+| prod-api-gateway | 8765 | NA | 
+| prod-customer-ms | 9090 | http://ipaddress:8761/customer-service/api/ -> UP
+| prod-order-ms | 9080 | http://ipaddress:8761/order-service/api/ -> UP
+| prod-promotion-ms | 9060 | http://ipaddress:8761/promotion-service/api/ -> UP
+| prod-restaurant-ms | 9070 | http://ipaddress:8761/restaurant-service/api/ -> UP
+| prod-discovery-service | 8761 |
+
+
+
+
+- public subnet
+    - nginx - t3.large	 
+
+
+
+- Admin Registration 
+- Restaurant Owner Login-Backend
+- Restaurant Owner -Registration -Backend 
+- Restaurant Owner -Registration -fronend  
+
+
+payload 
+    - Customer - Mobile No 
+        - http://ipaddress:8080/auth-server/api/customer/login
+    - Resaturant Owner - Login Name + Password 
+        - http://ipaddress:8080/auth-server/api/restuarant-owner/login
+    - Admin - Login Name + Password 
+        - - http://ipaddress:8080/auth-server/api/admin/login

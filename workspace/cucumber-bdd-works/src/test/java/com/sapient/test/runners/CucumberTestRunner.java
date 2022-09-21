@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 		features = {"src/main/resources"}, 
 		glue = {"com.sapient.steps"}, 
 		monochrome = true, 
-		publish = false, 
+		publish = true, 
 		plugin = {"pretty", "json:target/api-report.json", "html:target/html-reports.html"}, 
 		tags = "@regression"
 	)
