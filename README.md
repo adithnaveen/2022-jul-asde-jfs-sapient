@@ -2613,3 +2613,7 @@ payload
         - http://ipaddress:8080/auth-server/api/restuarant-owner/login
     - Admin - Login Name + Password 
         - - http://ipaddress:8080/auth-server/api/admin/login
+
+
+
+> docker network create sapient-nw 
