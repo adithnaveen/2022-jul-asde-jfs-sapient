@@ -2617,3 +2617,29 @@ payload
 
 
 > docker network create sapient-nw 
+
+
+
+
+
+
+
+- Customer 
+    - Register + Login (MFA)
+    - Scan QR Code 
+    - Choose menu item 
+    - Bill 
+    - promotion 
+
+- Restaurant Owner 
+    - Register + Login  (MFA)
+    - Create Restaurant 
+    - Add Items to the restaurant 
+    - 
+- Admin 
+    - able to see how much business each of them are doing 
+    - create another admin 
+    - Bulk upload of the menu items for the restaurant 
+
+
+MVP - Minimal Viable Product 
