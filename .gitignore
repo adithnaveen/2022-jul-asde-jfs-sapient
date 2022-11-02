@@ -60,5 +60,7 @@ local.properties
 node_modules
 
 secret
+# for project related files 
+project
 
 .DS_Store
